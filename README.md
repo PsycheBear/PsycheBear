@@ -8,7 +8,7 @@ I hate you
 
 ## Heyyo, I'm Psyche!
 
-I'm a software engineer working across the stack — frontend in TypeScript and React, backend and tooling in Python and Rust. My focus is on polished interfaces, performant animation, and reliable delivery.
+I mostly build for the web — JavaScript and TypeScript with React, plus a bit of Python when something needs scripting. I'm into clean UIs, animations that actually feel alive, and finishing what I start.
 
 ### Socials
 
@@ -36,9 +36,13 @@ I'm a software engineer working across the stack — frontend in TypeScript and 
 
 <p>
   <a href="https://github.com/PsycheBear">
-    <img src="https://github-readme-stats.vercel.app/api?username=PsycheBear&show_icons=true&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&icon_color=2A2018" alt="PsycheBear's GitHub stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=PsycheBear&show_icons=true&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&icon_color=2A2018&include_all_commits=true&hide=stars,prs,issues,contribs&hide_rank=true" alt="PsycheBear's GitHub stats" />
   </a>
   <a href="https://github.com/PsycheBear">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsycheBear&layout=compact&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&hide=html,css&size_weight=0.5&count_weight=0.5" alt="PsycheBear's top languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsycheBear&layout=compact&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&size_weight=0.5&count_weight=0.5&langs_count=10" alt="PsycheBear's top languages" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PsycheBear&bg_color=F5EFE0&color=2A2018&line=2A2018&point=2A2018&title_color=2A2018&area=true&area_color=2A2018&hide_border=true&custom_title=Contribution%20Activity" alt="PsycheBear's contribution activity graph" />
 </p>
