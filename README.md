@@ -10,15 +10,27 @@ I hate you
 
 ### Socials:
 
-<p>
-  <img src="https://skillicons.dev/icons?i=discord" height="48" alt="Discord" />
-  &nbsp; <strong>Psychede1icBear</strong>
-</p>
+<a href="https://discord.com/users/305222038547595264">
+  <img src="https://lanyard-profile-readme.vercel.app/api/305222038547595264" alt="Discord profile — Psychede1icBear" />
+</a>
 
 ### Languages and Tools:
 
-<img src="https://skillicons.dev/icons?i=js,ts,py,html,css,rust,git,github" alt="Languages and Tools" />
+<p>
+  <a href="https://developer.mozilla.org/docs/Web/JavaScript"><img src="https://skillicons.dev/icons?i=js" height="48" alt="JavaScript" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://skillicons.dev/icons?i=ts" height="48" alt="TypeScript" /></a>
+  <a href="https://www.python.org/"><img src="https://skillicons.dev/icons?i=py" height="48" alt="Python" /></a>
+  <a href="https://developer.mozilla.org/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" height="48" alt="HTML" /></a>
+  <a href="https://developer.mozilla.org/docs/Web/CSS"><img src="https://skillicons.dev/icons?i=css" height="48" alt="CSS" /></a>
+  <a href="https://www.rust-lang.org/"><img src="https://skillicons.dev/icons?i=rust" height="48" alt="Rust" /></a>
+  <a href="https://git-scm.com/"><img src="https://skillicons.dev/icons?i=git" height="48" alt="Git" /></a>
+  <a href="https://github.com/"><img src="https://skillicons.dev/icons?i=github" height="48" alt="GitHub" /></a>
+</p>
 
 ### Softwares:
 
-<img src="https://skillicons.dev/icons?i=vscode,figma,ai" alt="Softwares" />
+<p>
+  <a href="https://code.visualstudio.com/"><img src="https://skillicons.dev/icons?i=vscode" height="48" alt="VS Code" /></a>
+  <a href="https://www.figma.com/"><img src="https://skillicons.dev/icons?i=figma" height="48" alt="Figma" /></a>
+  <a href="https://www.adobe.com/products/illustrator.html"><img src="https://skillicons.dev/icons?i=ai" height="48" alt="Illustrator" /></a>
+</p>
