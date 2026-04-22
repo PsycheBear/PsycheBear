@@ -59,12 +59,12 @@
     <animateTransform attributeName="transform" type="translate"
                       values="-260,0; 1280,0"
                       dur="30s" repeatCount="indefinite"/>
-    <!-- Body silhouette: snout, dorsal fin, second dorsal, tail, belly -->
+    <!-- Body silhouette: snout, dorsal fin, second dorsal, tail, belly (outline only — water shows through) -->
     <path d="M 228,362 Q 222,355 208,352 Q 198,350 192,352 L 175,330 L 172,352 Q 160,355 148,358 L 141,349 L 135,358 Q 125,360 115,361 L 95,340 L 108,361 L 100,380 L 115,361 Q 140,374 175,373 Q 210,372 220,368 Q 225,365 228,362 Z"
-          fill="#F5EFE0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
+          fill="none" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
     <!-- Pectoral fin hanging below the body -->
     <path d="M 195,370 L 178,382 L 210,370 Z"
-          fill="#F5EFE0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
+          fill="none" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
     <!-- Gill slits (five diagonals behind the head) -->
     <g stroke="#2A2018" stroke-width="1" fill="none" stroke-linecap="round">
       <line x1="213" y1="358" x2="211" y2="365"/>
@@ -170,83 +170,109 @@
     </g>
 
     <!-- ═══════════════════════════════════════════ -->
-    <!-- STICK FIGURE 1 — LEFT (bandana)            -->
+    <!-- STICK FIGURE 1 — LEFT (bandana pirate)     -->
     <!-- ═══════════════════════════════════════════ -->
     <g stroke="#2A2018" stroke-width="2.8" stroke-linecap="round" fill="none">
       <!-- Head -->
-      <circle cx="515" cy="260" r="10" fill="#F5EFE0"/>
-      <!-- Bandana -->
-      <path d="M 505,258 Q 515,252 525,258 L 525,262 L 505,262 Z" fill="#2A2018" stroke="none"/>
-      <line x1="524" y1="262" x2="532" y2="270" stroke-width="2.5"/>
-      <line x1="526" y1="260" x2="534" y2="265" stroke-width="2"/>
+      <circle cx="515" cy="258" r="12" fill="#F5EFE0"/>
+      <!-- Bandana wrapped around head -->
+      <path d="M 503,256 Q 515,248 527,256 L 527,261 L 503,261 Z" fill="#2A2018" stroke="none"/>
+      <!-- Bandana knot + trailing tails -->
+      <line x1="526" y1="258" x2="534" y2="266" stroke-width="2.5"/>
+      <line x1="528" y1="256" x2="537" y2="261" stroke-width="2"/>
       <!-- Eye -->
-      <circle cx="518" cy="264" r="1" fill="#2A2018" stroke="none"/>
+      <circle cx="518" cy="264" r="1.2" fill="#2A2018" stroke="none"/>
+      <!-- Smile with teeth -->
+      <path d="M 511,268 L 513,271 L 515,268 L 517,271 L 519,268" stroke-width="1" fill="none"/>
+      <!-- Earring -->
+      <circle cx="503" cy="265" r="1" stroke="#2A2018" stroke-width="0.8" fill="none"/>
       <!-- Body -->
       <line x1="515" y1="270" x2="515" y2="315"/>
       <!-- Legs (stance) -->
-      <line x1="515" y1="315" x2="505" y2="338"/>
-      <line x1="515" y1="315" x2="527" y2="338"/>
-      <!-- Back arm (static, behind body) -->
+      <line x1="515" y1="315" x2="505" y2="334"/>
+      <line x1="515" y1="315" x2="527" y2="334"/>
+      <!-- Boots (cuff + foot) -->
+      <rect x="500" y="332" width="11" height="3" fill="#2A2018" stroke="none"/>
+      <path d="M 498,335 L 498,338 L 510,338 L 512,335 Z" fill="#2A2018" stroke="none"/>
+      <rect x="522" y="332" width="11" height="3" fill="#2A2018" stroke="none"/>
+      <path d="M 520,335 L 520,338 L 532,338 L 534,335 Z" fill="#2A2018" stroke="none"/>
+      <!-- Back arm -->
       <line x1="515" y1="282" x2="500" y2="302"/>
 
-      <!-- SWORD ARM + SWORD — animated swing -->
+      <!-- SWORD ARM + CURVED SABER — gentle swing, blade crosses center -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
-                          values="-35 515 282; -20 515 282; -35 515 282; -50 515 282; -35 515 282"
+                          values="-10 515 282; 8 515 282; -10 515 282; -18 515 282; -10 515 282"
                           dur="1.1s" repeatCount="indefinite"/>
         <!-- Forearm -->
-        <line x1="515" y1="282" x2="543" y2="276"/>
+        <line x1="515" y1="282" x2="543" y2="274"/>
+        <!-- Hilt grip -->
+        <line x1="543" y1="274" x2="549" y2="272" stroke-width="3"/>
         <!-- Crossguard -->
-        <line x1="540" y1="270" x2="546" y2="282" stroke-width="3.5"/>
-        <!-- Blade -->
-        <line x1="543" y1="276" x2="596" y2="258"/>
+        <line x1="546" y1="268" x2="550" y2="280" stroke-width="3.5"/>
+        <!-- Curved saber blade (crosses past center) -->
+        <path d="M 549,272 Q 580,254 612,246" stroke-width="2.5" fill="none"/>
         <!-- Blade tip flick -->
-        <line x1="592" y1="259" x2="600" y2="256" stroke-width="2"/>
+        <line x1="608" y1="248" x2="616" y2="244" stroke-width="2"/>
       </g>
     </g>
 
     <!-- ═══════════════════════════════════════════ -->
-    <!-- STICK FIGURE 2 — RIGHT (pirate hat, eye patch) -->
+    <!-- STICK FIGURE 2 — RIGHT (pirate hat + patch) -->
     <!-- ═══════════════════════════════════════════ -->
     <g stroke="#2A2018" stroke-width="2.8" stroke-linecap="round" fill="none">
       <!-- Head -->
-      <circle cx="685" cy="260" r="10" fill="#F5EFE0"/>
-      <!-- Pirate hat -->
-      <path d="M 670,250 Q 685,238 700,250 L 700,254 L 670,254 Z" fill="#2A2018" stroke="none"/>
-      <path d="M 672,248 Q 685,240 698,248" stroke-width="1.5"/>
+      <circle cx="685" cy="258" r="12" fill="#F5EFE0"/>
+      <!-- Pirate hat (tricorn silhouette) -->
+      <path d="M 666,248 Q 685,232 704,248 L 702,253 L 668,253 Z" fill="#2A2018" stroke="none"/>
+      <!-- Hat brim underline -->
+      <path d="M 668,250 Q 685,242 702,250" stroke-width="1.3" fill="none"/>
       <!-- Tiny skull on hat -->
-      <circle cx="685" cy="246" r="1.2" fill="#F5EFE0" stroke="none"/>
+      <circle cx="685" cy="244" r="1.4" fill="#F5EFE0" stroke="none"/>
+      <circle cx="683.5" cy="243.5" r="0.3" fill="#2A2018" stroke="none"/>
+      <circle cx="686.5" cy="243.5" r="0.3" fill="#2A2018" stroke="none"/>
       <!-- Eye patch -->
-      <rect x="679" y="259" width="9" height="4" fill="#2A2018" stroke="none"/>
-      <line x1="675" y1="258" x2="695" y2="258" stroke-width="1"/>
-      <!-- Other eye -->
-      <circle cx="691" cy="264" r="1" fill="#2A2018" stroke="none"/>
+      <rect x="677" y="258" width="10" height="4" fill="#2A2018" stroke="none"/>
+      <line x1="673" y1="257" x2="697" y2="257" stroke-width="1"/>
+      <!-- Good eye -->
+      <circle cx="693" cy="263" r="1.2" fill="#2A2018" stroke="none"/>
+      <!-- Grinning smile with teeth -->
+      <path d="M 681,268 L 683,271 L 685,268 L 687,271 L 689,268" stroke-width="1" fill="none"/>
+      <!-- Earring -->
+      <circle cx="697" cy="266" r="1" stroke="#2A2018" stroke-width="0.8" fill="none"/>
       <!-- Body -->
       <line x1="685" y1="270" x2="685" y2="315"/>
       <!-- Legs -->
-      <line x1="685" y1="315" x2="675" y2="338"/>
-      <line x1="685" y1="315" x2="697" y2="338"/>
+      <line x1="685" y1="315" x2="675" y2="334"/>
+      <line x1="685" y1="315" x2="697" y2="334"/>
+      <!-- Boots -->
+      <rect x="670" y="332" width="11" height="3" fill="#2A2018" stroke="none"/>
+      <path d="M 668,335 L 668,338 L 680,338 L 682,335 Z" fill="#2A2018" stroke="none"/>
+      <rect x="692" y="332" width="11" height="3" fill="#2A2018" stroke="none"/>
+      <path d="M 690,335 L 690,338 L 702,338 L 704,335 Z" fill="#2A2018" stroke="none"/>
       <!-- Back arm -->
       <line x1="685" y1="282" x2="700" y2="302"/>
 
-      <!-- SWORD ARM + SWORD — swings opposite to figure 1 -->
+      <!-- SWORD ARM + CURVED SABER — mirrored swing, blade crosses center -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
-                          values="35 685 282; 20 685 282; 35 685 282; 50 685 282; 35 685 282"
+                          values="10 685 282; -8 685 282; 10 685 282; 18 685 282; 10 685 282"
                           dur="1.1s" repeatCount="indefinite"/>
         <!-- Forearm -->
-        <line x1="685" y1="282" x2="657" y2="276"/>
+        <line x1="685" y1="282" x2="657" y2="274"/>
+        <!-- Hilt grip -->
+        <line x1="657" y1="274" x2="651" y2="272" stroke-width="3"/>
         <!-- Crossguard -->
-        <line x1="660" y1="270" x2="654" y2="282" stroke-width="3.5"/>
-        <!-- Blade -->
-        <line x1="657" y1="276" x2="604" y2="258"/>
+        <line x1="654" y1="268" x2="650" y2="280" stroke-width="3.5"/>
+        <!-- Curved saber blade (mirrored, crosses past center) -->
+        <path d="M 651,272 Q 620,254 588,246" stroke-width="2.5" fill="none"/>
         <!-- Blade tip flick -->
-        <line x1="608" y1="259" x2="600" y2="256" stroke-width="2"/>
+        <line x1="592" y1="248" x2="584" y2="244" stroke-width="2"/>
       </g>
     </g>
 
-    <!-- CLASH SPARKS — appear intermittently where swords meet -->
-    <g transform="translate(600 258)" stroke="#2A2018" stroke-width="2.2" stroke-linecap="round">
+    <!-- CLASH SPARKS — burst at sword-crossing point -->
+    <g transform="translate(600 250)" stroke="#2A2018" stroke-width="2.2" stroke-linecap="round">
       <g>
         <animate attributeName="opacity" values="0;0;0;1;0;0" dur="1.1s" repeatCount="indefinite"/>
         <line x1="0" y1="0" x2="-10" y2="-10"/>
@@ -274,18 +300,15 @@
                         values="0,0; 0,-4; 0,2; 0,-2; 0,0"
                         dur="4.5s" repeatCount="indefinite"/>
 
-      <!-- Trailing ribbon — attached directly to the gondola stern, waves in the wind -->
-      <!-- Two short tie cords anchor it to the gondola corner -->
-      <line x1="162" y1="115" x2="155" y2="120" stroke="#2A2018" stroke-width="1"/>
-      <line x1="162" y1="127" x2="155" y2="140" stroke="#2A2018" stroke-width="1"/>
-      <path d="M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z"
+      <!-- Trailing ribbon — attached at gondola stern top, waves in the wind -->
+      <path d="M 162,100 Q 110,96 60,100 Q 10,104 -40,100 Q -90,96 -140,100 L -140,122 Q -90,118 -40,122 Q 10,126 60,122 Q 110,118 162,122 Z"
             fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round">
         <animate attributeName="d" dur="2s" repeatCount="indefinite"
-          values="M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z;
-                  M 160,120 Q 110,124 60,120 Q 10,116 -40,120 Q -90,124 -140,120 L -140,142 Q -90,146 -40,142 Q 10,138 60,142 Q 110,146 160,142 Z;
-                  M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z"/>
+          values="M 162,100 Q 110,96 60,100 Q 10,104 -40,100 Q -90,96 -140,100 L -140,122 Q -90,118 -40,122 Q 10,126 60,122 Q 110,118 162,122 Z;
+                  M 162,100 Q 110,104 60,100 Q 10,96 -40,100 Q -90,104 -140,100 L -140,122 Q -90,126 -40,122 Q 10,118 60,122 Q 110,126 162,122 Z;
+                  M 162,100 Q 110,96 60,100 Q 10,104 -40,100 Q -90,96 -140,100 L -140,122 Q -90,118 -40,122 Q 10,126 60,122 Q 110,118 162,122 Z"/>
       </path>
-      <text x="10" y="134" font-family="'Courier New', Courier, monospace"
+      <text x="10" y="114" font-family="'Courier New', Courier, monospace"
             font-size="10" font-weight="bold"
             fill="#2A2018" text-anchor="middle">NO TESTS, JUST PUSH &amp; COMMIT</text>
 
