@@ -1,0 +1,239 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two stick figures sword fighting on a pirate ship">
+  <!-- Parchment background -->
+  <rect width="1200" height="400" fill="#F5EFE0"/>
+
+  <!-- Subtle tea-stain texture -->
+  <circle cx="150" cy="100" r="90" fill="#EADFB8" opacity="0.35"/>
+  <circle cx="1050" cy="320" r="140" fill="#EADFB8" opacity="0.35"/>
+  <circle cx="700" cy="60" r="60" fill="#EADFB8" opacity="0.25"/>
+
+  <!-- Moon -->
+  <circle cx="980" cy="90" r="32" fill="none" stroke="#2A2018" stroke-width="2"/>
+  <circle cx="970" cy="85" r="4" fill="none" stroke="#2A2018" stroke-width="1.5"/>
+  <circle cx="990" cy="100" r="3" fill="none" stroke="#2A2018" stroke-width="1.5"/>
+
+  <!-- Clouds -->
+  <g fill="none" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
+    <path d="M 100,80 Q 130,62 160,80 Q 180,70 200,85"/>
+    <path d="M 280,130 Q 310,110 340,130"/>
+    <path d="M 850,70 Q 880,50 910,70 Q 930,60 950,75"/>
+  </g>
+
+  <!-- Distant birds -->
+  <g fill="none" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
+    <path d="M 420,95 Q 428,88 436,95 Q 444,88 452,95"/>
+    <path d="M 510,75 Q 517,69 524,75 Q 531,69 538,75"/>
+    <path d="M 760,110 Q 767,104 774,110 Q 781,104 788,110"/>
+  </g>
+
+  <!-- Ocean — two layered waves, both animate translation -->
+  <g clip-path="inset(0)">
+    <path fill="#D7C89A" d="M -40,355 Q 40,345 120,355 Q 200,365 280,355 Q 360,345 440,355 Q 520,365 600,355 Q 680,345 760,355 Q 840,365 920,355 Q 1000,345 1080,355 Q 1160,365 1240,355 L 1240,400 L -40,400 Z">
+      <animate attributeName="d" dur="5s" repeatCount="indefinite"
+        values="M -40,355 Q 40,345 120,355 Q 200,365 280,355 Q 360,345 440,355 Q 520,365 600,355 Q 680,345 760,355 Q 840,365 920,355 Q 1000,345 1080,355 Q 1160,365 1240,355 L 1240,400 L -40,400 Z;
+                M -40,355 Q 40,365 120,355 Q 200,345 280,355 Q 360,365 440,355 Q 520,345 600,355 Q 680,365 760,355 Q 840,345 920,355 Q 1000,365 1080,355 Q 1160,345 1240,355 L 1240,400 L -40,400 Z;
+                M -40,355 Q 40,345 120,355 Q 200,365 280,355 Q 360,345 440,355 Q 520,365 600,355 Q 680,345 760,355 Q 840,365 920,355 Q 1000,345 1080,355 Q 1160,365 1240,355 L 1240,400 L -40,400 Z"/>
+    </path>
+    <path fill="#C2B07A" opacity="0.8" d="M -40,375 Q 60,370 160,375 Q 260,380 360,375 Q 460,370 560,375 Q 660,380 760,375 Q 860,370 960,375 Q 1060,380 1160,375 Q 1240,370 1240,375 L 1240,400 L -40,400 Z">
+      <animate attributeName="d" dur="4s" repeatCount="indefinite"
+        values="M -40,375 Q 60,370 160,375 Q 260,380 360,375 Q 460,370 560,375 Q 660,380 760,375 Q 860,370 960,375 Q 1060,380 1160,375 Q 1240,370 1240,375 L 1240,400 L -40,400 Z;
+                M -40,375 Q 60,380 160,375 Q 260,370 360,375 Q 460,380 560,375 Q 660,370 760,375 Q 860,380 960,375 Q 1060,370 1160,375 Q 1240,380 1240,375 L 1240,400 L -40,400 Z;
+                M -40,375 Q 60,370 160,375 Q 260,380 360,375 Q 460,370 560,375 Q 660,380 760,375 Q 860,370 960,375 Q 1060,380 1160,375 Q 1240,370 1240,375 L 1240,400 L -40,400 Z"/>
+    </path>
+  </g>
+
+  <!-- Shark fin swimming in the water (outside the ship group so it doesn't rock) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+                      values="-50,0; 1300,0"
+                      dur="28s" repeatCount="indefinite"/>
+    <path d="M 150,360 L 165,340 L 180,360 Z" fill="#2A2018"/>
+    <path d="M 145,363 Q 165,361 185,363" stroke="#2A2018" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- The whole ship group rocks gently -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+                      values="-2 600 360; 2 600 360; -2 600 360"
+                      dur="5s" repeatCount="indefinite"/>
+
+    <!-- Flag — waves -->
+    <line x1="600" y1="70" x2="600" y2="115" stroke="#2A2018" stroke-width="2.5"/>
+    <path fill="#2A2018" d="M 600,75 L 648,82 L 642,95 L 648,108 L 600,100 Z">
+      <animate attributeName="d" dur="1.8s" repeatCount="indefinite"
+        values="M 600,75 L 648,82 L 642,95 L 648,108 L 600,100 Z;
+                M 600,75 L 648,72 L 650,95 L 648,100 L 600,100 Z;
+                M 600,75 L 648,82 L 642,95 L 648,108 L 600,100 Z"/>
+    </path>
+    <!-- Skull + crossbones on flag -->
+    <circle cx="622" cy="90" r="3.5" fill="#F5EFE0"/>
+    <circle cx="620" cy="89" r="0.8" fill="#2A2018"/>
+    <circle cx="624" cy="89" r="0.8" fill="#2A2018"/>
+    <rect x="618" y="93" width="8" height="1.5" fill="#F5EFE0"/>
+    <line x1="617" y1="97" x2="627" y2="97" stroke="#F5EFE0" stroke-width="1.2"/>
+
+    <!-- Mast -->
+    <line x1="600" y1="115" x2="600" y2="340" stroke="#2A2018" stroke-width="4"/>
+
+    <!-- Crow's nest -->
+    <path d="M 580,118 L 620,118 L 618,135 L 582,135 Z"
+          fill="#F5EFE0" stroke="#2A2018" stroke-width="2"/>
+    <line x1="584" y1="122" x2="616" y2="122" stroke="#2A2018" stroke-width="1.5"/>
+
+    <!-- Sails (two panels) -->
+    <path d="M 600,140 Q 540,175 528,240 Q 540,265 600,275 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 600,140 Q 660,175 672,240 Q 660,265 600,275 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Sail stitching -->
+    <line x1="600" y1="140" x2="600" y2="275" stroke="#2A2018" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M 545,180 Q 600,195 655,180" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="2 2"/>
+    <path d="M 538,220 Q 600,232 662,220" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="2 2"/>
+
+    <!-- Ropes from mast -->
+    <line x1="600" y1="118" x2="460" y2="330" stroke="#2A2018" stroke-width="1.5"/>
+    <line x1="600" y1="118" x2="740" y2="330" stroke="#2A2018" stroke-width="1.5"/>
+
+    <!-- Deck line -->
+    <line x1="435" y1="340" x2="765" y2="340" stroke="#2A2018" stroke-width="2.5"/>
+
+    <!-- Railing posts -->
+    <g stroke="#2A2018" stroke-width="2">
+      <line x1="440" y1="325" x2="440" y2="340"/>
+      <line x1="478" y1="325" x2="478" y2="340"/>
+      <line x1="555" y1="325" x2="555" y2="340"/>
+      <line x1="645" y1="325" x2="645" y2="340"/>
+      <line x1="722" y1="325" x2="722" y2="340"/>
+      <line x1="760" y1="325" x2="760" y2="340"/>
+    </g>
+    <line x1="438" y1="325" x2="762" y2="325" stroke="#2A2018" stroke-width="2.5"/>
+
+    <!-- Hull -->
+    <path d="M 430,340 L 770,340 L 738,388 L 462,388 Z"
+          fill="#F5EFE0" stroke="#2A2018" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Hull planks (horizontal) -->
+    <line x1="450" y1="352" x2="750" y2="352" stroke="#2A2018" stroke-width="1"/>
+    <line x1="455" y1="364" x2="745" y2="364" stroke="#2A2018" stroke-width="1"/>
+    <line x1="460" y1="376" x2="740" y2="376" stroke="#2A2018" stroke-width="1"/>
+
+    <!-- Portholes -->
+    <g fill="none" stroke="#2A2018" stroke-width="2">
+      <circle cx="490" cy="362" r="6"/>
+      <circle cx="545" cy="362" r="6"/>
+      <circle cx="600" cy="362" r="6"/>
+      <circle cx="655" cy="362" r="6"/>
+      <circle cx="710" cy="362" r="6"/>
+    </g>
+
+    <!-- Barrel/crate on deck (left) -->
+    <g stroke="#2A2018" stroke-width="1.8" fill="none">
+      <rect x="450" y="310" width="22" height="22"/>
+      <line x1="461" y1="310" x2="461" y2="332"/>
+      <line x1="450" y1="321" x2="472" y2="321"/>
+    </g>
+
+    <!-- Barrel (right) -->
+    <g stroke="#2A2018" stroke-width="1.8" fill="#F5EFE0">
+      <ellipse cx="740" cy="314" rx="10" ry="4"/>
+      <path d="M 730,314 L 730,332 Q 740,336 750,332 L 750,314" fill="#F5EFE0"/>
+      <line x1="730" y1="322" x2="750" y2="322" stroke-width="1"/>
+    </g>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICK FIGURE 1 — LEFT (bandana)            -->
+    <!-- ═══════════════════════════════════════════ -->
+    <g stroke="#2A2018" stroke-width="2.8" stroke-linecap="round" fill="none">
+      <!-- Head -->
+      <circle cx="515" cy="260" r="10" fill="#F5EFE0"/>
+      <!-- Bandana -->
+      <path d="M 505,258 Q 515,252 525,258 L 525,262 L 505,262 Z" fill="#2A2018" stroke="none"/>
+      <line x1="524" y1="262" x2="532" y2="270" stroke-width="2.5"/>
+      <line x1="526" y1="260" x2="534" y2="265" stroke-width="2"/>
+      <!-- Eye -->
+      <circle cx="518" cy="264" r="1" fill="#2A2018" stroke="none"/>
+      <!-- Body -->
+      <line x1="515" y1="270" x2="515" y2="315"/>
+      <!-- Legs (stance) -->
+      <line x1="515" y1="315" x2="505" y2="338"/>
+      <line x1="515" y1="315" x2="527" y2="338"/>
+      <!-- Back arm (static, behind body) -->
+      <line x1="515" y1="282" x2="500" y2="302"/>
+
+      <!-- SWORD ARM + SWORD — animated swing -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+                          values="-35 515 282; -20 515 282; -35 515 282; -50 515 282; -35 515 282"
+                          dur="1.1s" repeatCount="indefinite"/>
+        <!-- Forearm -->
+        <line x1="515" y1="282" x2="543" y2="276"/>
+        <!-- Crossguard -->
+        <line x1="540" y1="270" x2="546" y2="282" stroke-width="3.5"/>
+        <!-- Blade -->
+        <line x1="543" y1="276" x2="596" y2="258"/>
+        <!-- Blade tip flick -->
+        <line x1="592" y1="259" x2="600" y2="256" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICK FIGURE 2 — RIGHT (pirate hat, eye patch) -->
+    <!-- ═══════════════════════════════════════════ -->
+    <g stroke="#2A2018" stroke-width="2.8" stroke-linecap="round" fill="none">
+      <!-- Head -->
+      <circle cx="685" cy="260" r="10" fill="#F5EFE0"/>
+      <!-- Pirate hat -->
+      <path d="M 670,250 Q 685,238 700,250 L 700,254 L 670,254 Z" fill="#2A2018" stroke="none"/>
+      <path d="M 672,248 Q 685,240 698,248" stroke-width="1.5"/>
+      <!-- Tiny skull on hat -->
+      <circle cx="685" cy="246" r="1.2" fill="#F5EFE0" stroke="none"/>
+      <!-- Eye patch -->
+      <rect x="679" y="259" width="9" height="4" fill="#2A2018" stroke="none"/>
+      <line x1="675" y1="258" x2="695" y2="258" stroke-width="1"/>
+      <!-- Other eye -->
+      <circle cx="691" cy="264" r="1" fill="#2A2018" stroke="none"/>
+      <!-- Body -->
+      <line x1="685" y1="270" x2="685" y2="315"/>
+      <!-- Legs -->
+      <line x1="685" y1="315" x2="675" y2="338"/>
+      <line x1="685" y1="315" x2="697" y2="338"/>
+      <!-- Back arm -->
+      <line x1="685" y1="282" x2="700" y2="302"/>
+
+      <!-- SWORD ARM + SWORD — swings opposite to figure 1 -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+                          values="35 685 282; 20 685 282; 35 685 282; 50 685 282; 35 685 282"
+                          dur="1.1s" repeatCount="indefinite"/>
+        <!-- Forearm -->
+        <line x1="685" y1="282" x2="657" y2="276"/>
+        <!-- Crossguard -->
+        <line x1="660" y1="270" x2="654" y2="282" stroke-width="3.5"/>
+        <!-- Blade -->
+        <line x1="657" y1="276" x2="604" y2="258"/>
+        <!-- Blade tip flick -->
+        <line x1="608" y1="259" x2="600" y2="256" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- CLASH SPARKS — appear intermittently where swords meet -->
+    <g transform="translate(600 258)" stroke="#2A2018" stroke-width="2.2" stroke-linecap="round">
+      <g>
+        <animate attributeName="opacity" values="0;0;0;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+        <line x1="0" y1="0" x2="-10" y2="-10"/>
+        <line x1="0" y1="0" x2="10" y2="-10"/>
+        <line x1="0" y1="0" x2="-14" y2="0"/>
+        <line x1="0" y1="0" x2="14" y2="0"/>
+        <line x1="0" y1="0" x2="0" y2="-14"/>
+        <line x1="0" y1="0" x2="-8" y2="8"/>
+        <line x1="0" y1="0" x2="8" y2="8"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Name strip at bottom -->
+  <text x="600" y="392" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="14" font-style="italic" font-weight="bold"
+        fill="#2A2018" letter-spacing="4">~ psychebear ~</text>
+</svg>

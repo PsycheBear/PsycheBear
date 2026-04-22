@@ -1,16 +1,20 @@
-## Hi there 👋
+<p align="center">
+  <img src="./banner.svg" alt="Two stick figures sword fighting on a pirate ship" width="100%" />
+</p>
 
-<!--
-**PsycheBear/PsycheBear** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### hi, i'm psyche
 
-Here are some ideas to get you started:
+i build things. games mostly, sometimes tools, sometimes trouble.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### currently on deck
+
+- **[wasteland_tactics](https://github.com/PsycheBear/Wasteland_Tactics)** — fallout-themed auto-battler. pip-boy ui, 22-unit roster, tft mechanics. react + vite + tauri.
+- **[empire_game](https://github.com/PsycheBear/Empire_Game)** — hex-strategy I made with a cousin. five civs, physics dice, a slot machine that is definitely not rigged.
+- **[study-room](https://github.com/PsycheBear/study-room)** — mobile-first study companion. built as a gift. react + tailwind + framer motion.
+- **[yachtbot](https://github.com/PsycheBear/yachtbot)** / **[tq2-the-forge](https://github.com/PsycheBear/TQ2-the-forge)** — side quests. quietly iterating.
+
+---
+
+<sub>south florida · building weird things · third eye optional</sub>
