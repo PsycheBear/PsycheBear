@@ -195,28 +195,29 @@
       <!-- Back arm -->
       <line x1="515" y1="287" x2="503" y2="302"/>
 
-      <!-- SWORD ARM + CUTLASS — wide fighting swings on a 1.3s cycle -->
+      <!-- SWORD ARM + CUTLASS — arm raises to fist, hilt bends up at a different
+           angle so the blade isn't collinear with the forearm -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
                           values="-5 515 287; -28 515 287; -10 515 287; 15 515 287; -5 515 287"
                           dur="1.3s" repeatCount="indefinite"/>
-        <!-- Forearm -->
-        <line x1="515" y1="287" x2="533" y2="282"/>
-        <!-- Fist holding the grip -->
-        <circle cx="535" cy="281" r="2.3" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
-        <!-- Pommel (rounded butt of hilt) -->
-        <circle cx="533.5" cy="283" r="1.3" fill="#2A2018" stroke="none"/>
-        <!-- Wrapped grip between fist and guard -->
-        <line x1="537" y1="280" x2="542" y2="278.5" stroke="#2A2018" stroke-width="3.5" stroke-linecap="round"/>
-        <!-- Crossguard (quillons) -->
-        <line x1="540" y1="275" x2="545" y2="284" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
-        <!-- D-knuckle guard curving from crossguard back toward the pommel -->
-        <path d="M 545,283 Q 549,288 540,286" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade — curved filled shape with a notched tip -->
-        <path d="M 544,277 Q 578,261 605,248 L 613,244 L 614,248 L 611,251 Q 581,264 547,280 Z"
+        <!-- Forearm (raised up-right to the fist) -->
+        <line x1="515" y1="287" x2="540" y2="275"/>
+        <!-- Fist wrapped around the hilt -->
+        <circle cx="540" cy="275" r="2.5" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
+        <!-- Pommel peeking out behind the fist -->
+        <circle cx="537" cy="278" r="1.5" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip — steeper angle than the arm (wrist bend) -->
+        <line x1="541" y1="273" x2="549" y2="265" stroke="#2A2018" stroke-width="3.2" stroke-linecap="round"/>
+        <!-- Crossguard (quillons) perpendicular to the grip -->
+        <line x1="544" y1="261" x2="553" y2="270" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- D-knuckle guard -->
+        <path d="M 553,270 Q 557,273 549,273" stroke="#2A2018" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <!-- Cutlass blade — curves up from the hilt at its own angle -->
+        <path d="M 549,268 Q 578,252 605,238 L 612,234 L 613,238 L 610,241 Q 583,255 552,271 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
         <!-- Blade fuller (thin groove line) -->
-        <path d="M 552,275 Q 580,262 605,251" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 556,266 Q 580,253 605,241" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -257,28 +258,28 @@
         <animateTransform attributeName="transform" type="rotate"
                           values="8 685 287; -12 685 287; 28 685 287; 5 685 287; 8 685 287"
                           dur="1.05s" repeatCount="indefinite"/>
-        <!-- Forearm -->
-        <line x1="685" y1="287" x2="667" y2="282"/>
-        <!-- Fist -->
-        <circle cx="665" cy="281" r="2.3" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
-        <!-- Pommel -->
-        <circle cx="666.5" cy="283" r="1.3" fill="#2A2018" stroke="none"/>
-        <!-- Wrapped grip -->
-        <line x1="663" y1="280" x2="658" y2="278.5" stroke="#2A2018" stroke-width="3.5" stroke-linecap="round"/>
-        <!-- Crossguard -->
-        <line x1="660" y1="275" x2="655" y2="284" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- Forearm (raised up-left to the fist) -->
+        <line x1="685" y1="287" x2="660" y2="275"/>
+        <!-- Fist wrapped around the hilt -->
+        <circle cx="660" cy="275" r="2.5" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
+        <!-- Pommel peeking out behind the fist -->
+        <circle cx="663" cy="278" r="1.5" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip — steeper angle than the arm (wrist bend) -->
+        <line x1="659" y1="273" x2="651" y2="265" stroke="#2A2018" stroke-width="3.2" stroke-linecap="round"/>
+        <!-- Crossguard (quillons) perpendicular to the grip -->
+        <line x1="656" y1="261" x2="647" y2="270" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard (mirrored) -->
-        <path d="M 655,283 Q 651,288 660,286" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade (mirrored, filled, notched tip) -->
-        <path d="M 656,277 Q 622,261 595,248 L 587,244 L 586,248 L 589,251 Q 619,264 653,280 Z"
+        <path d="M 647,270 Q 643,273 651,273" stroke="#2A2018" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <!-- Cutlass blade — curves up from the hilt (mirrored) -->
+        <path d="M 651,268 Q 622,252 595,238 L 588,234 L 587,238 L 590,241 Q 617,255 648,271 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
         <!-- Blade fuller -->
-        <path d="M 648,275 Q 620,262 595,251" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 644,266 Q 620,253 595,241" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
     <!-- CLASH SPARKS at the cutlass crossing -->
-    <g transform="translate(600 249)" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
+    <g transform="translate(600 238)" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
       <g>
         <animate attributeName="opacity" values="0;0;0;1;0;0" dur="1.1s" repeatCount="indefinite"/>
         <line x1="0" y1="0" x2="-8" y2="-8"/>
