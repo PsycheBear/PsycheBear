@@ -11,7 +11,7 @@ I hate you
 ### Socials:
 
 <a href="https://discord.com/users/305222038547595264">
-  <img src="https://lanyard-profile-readme.vercel.app/api/305222038547595264" alt="Discord profile — Psychede1icBear" />
+  <img src="https://lanyard-profile-readme.vercel.app/api/305222038547595264?hideActivity=true&showDisplayName=true&hideTag=true" alt="Discord profile — Psychede1icBear" />
 </a>
 
 ### Languages and Tools:
