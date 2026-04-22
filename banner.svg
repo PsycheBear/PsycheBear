@@ -213,11 +213,11 @@
         <line x1="546" y1="263" x2="558" y2="266" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard looping from the crossguard back toward the fist -->
         <path d="M 557,266 Q 562,273 553,273" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade — emerges upward/forward from the crossguard -->
-        <path d="M 553,262 Q 580,246 607,234 L 614,230 L 615,234 L 611,237 Q 585,250 557,266 Z"
+        <!-- Straight blade emerging upward/forward from the crossguard -->
+        <path d="M 553,262 L 611,229 L 615,232 L 557,266 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
-        <!-- Blade fuller -->
-        <path d="M 560,261 Q 583,248 607,237" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <!-- Blade fuller (straight groove line) -->
+        <path d="M 558,261 L 611,232" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -270,11 +270,11 @@
         <line x1="654" y1="263" x2="642" y2="266" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard (mirrored) -->
         <path d="M 643,266 Q 638,273 647,273" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade (mirrored) -->
-        <path d="M 647,262 Q 620,246 593,234 L 586,230 L 585,234 L 589,237 Q 615,250 643,266 Z"
+        <!-- Straight blade (mirrored) -->
+        <path d="M 647,262 L 589,229 L 585,232 L 643,266 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
         <!-- Blade fuller -->
-        <path d="M 640,261 Q 617,248 593,237" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 642,261 L 589,232" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
