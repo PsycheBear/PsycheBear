@@ -231,23 +231,28 @@
       <!-- Back arm -->
       <line x1="515" y1="287" x2="503" y2="302"/>
 
-      <!-- SWORD ARM + SABER — fist grips the hilt, blade curves and crosses center -->
+      <!-- SWORD ARM + CUTLASS — fist grips a proper hilt; curved filled blade -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
                           values="-10 515 287; 8 515 287; -10 515 287; -16 515 287; -10 515 287"
                           dur="1.1s" repeatCount="indefinite"/>
         <!-- Forearm -->
         <line x1="515" y1="287" x2="533" y2="282"/>
-        <!-- Fist gripping the hilt -->
-        <circle cx="535" cy="281" r="2.2" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
-        <!-- Hilt grip (pommel -> guard) -->
-        <line x1="538" y1="280" x2="544" y2="278" stroke-width="2.5"/>
-        <!-- Crossguard -->
-        <line x1="542" y1="275" x2="546" y2="284" stroke-width="3"/>
-        <!-- Curved saber blade -->
-        <path d="M 544,278 Q 576,262 608,250" stroke-width="2.3" fill="none"/>
-        <!-- Tip flick -->
-        <line x1="604" y1="252" x2="612" y2="247" stroke-width="2"/>
+        <!-- Fist holding the grip -->
+        <circle cx="535" cy="281" r="2.3" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
+        <!-- Pommel (rounded butt of hilt) -->
+        <circle cx="533.5" cy="283" r="1.3" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip between fist and guard -->
+        <line x1="537" y1="280" x2="542" y2="278.5" stroke="#2A2018" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Crossguard (quillons) -->
+        <line x1="540" y1="275" x2="545" y2="284" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- D-knuckle guard curving from crossguard back toward the pommel -->
+        <path d="M 545,283 Q 549,288 540,286" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <!-- Cutlass blade — curved filled shape with a notched tip -->
+        <path d="M 544,277 Q 578,261 605,248 L 613,244 L 614,248 L 611,251 Q 581,264 547,280 Z"
+              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
+        <!-- Blade fuller (thin groove line) -->
+        <path d="M 552,275 Q 580,262 605,251" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -283,28 +288,33 @@
       <!-- Back arm -->
       <line x1="685" y1="287" x2="697" y2="302"/>
 
-      <!-- SWORD ARM + SABER — mirrored, fist grips the hilt -->
+      <!-- SWORD ARM + CUTLASS — mirrored -->
       <g>
         <animateTransform attributeName="transform" type="rotate"
                           values="10 685 287; -8 685 287; 10 685 287; 16 685 287; 10 685 287"
                           dur="1.1s" repeatCount="indefinite"/>
         <!-- Forearm -->
         <line x1="685" y1="287" x2="667" y2="282"/>
-        <!-- Fist gripping the hilt -->
-        <circle cx="665" cy="281" r="2.2" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
-        <!-- Hilt grip -->
-        <line x1="662" y1="280" x2="656" y2="278" stroke-width="2.5"/>
+        <!-- Fist -->
+        <circle cx="665" cy="281" r="2.3" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.3"/>
+        <!-- Pommel -->
+        <circle cx="666.5" cy="283" r="1.3" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip -->
+        <line x1="663" y1="280" x2="658" y2="278.5" stroke="#2A2018" stroke-width="3.5" stroke-linecap="round"/>
         <!-- Crossguard -->
-        <line x1="658" y1="275" x2="654" y2="284" stroke-width="3"/>
-        <!-- Curved saber blade (mirrored) -->
-        <path d="M 656,278 Q 624,262 592,250" stroke-width="2.3" fill="none"/>
-        <!-- Tip flick -->
-        <line x1="596" y1="252" x2="588" y2="247" stroke-width="2"/>
+        <line x1="660" y1="275" x2="655" y2="284" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- D-knuckle guard (mirrored) -->
+        <path d="M 655,283 Q 651,288 660,286" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <!-- Cutlass blade (mirrored, filled, notched tip) -->
+        <path d="M 656,277 Q 622,261 595,248 L 587,244 L 586,248 L 589,251 Q 619,264 653,280 Z"
+              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
+        <!-- Blade fuller -->
+        <path d="M 648,275 Q 620,262 595,251" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
-    <!-- CLASH SPARKS at the saber crossing -->
-    <g transform="translate(600 253)" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
+    <!-- CLASH SPARKS at the cutlass crossing -->
+    <g transform="translate(600 249)" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
       <g>
         <animate attributeName="opacity" values="0;0;0;1;0;0" dur="1.1s" repeatCount="indefinite"/>
         <line x1="0" y1="0" x2="-8" y2="-8"/>
