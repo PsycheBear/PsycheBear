@@ -231,9 +231,9 @@
     </g>
   </g>
 
-  <!-- Name strip at bottom -->
-  <text x="600" y="392" text-anchor="middle"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="14" font-style="italic" font-weight="bold"
-        fill="#2A2018" letter-spacing="4">~ psychebear ~</text>
+  <!-- Name title at top -->
+  <text x="600" y="52" text-anchor="middle"
+        font-family="Palatino, 'Palatino Linotype', Georgia, serif"
+        font-size="42" font-weight="bold"
+        fill="#2A2018" letter-spacing="6">PsycheBear</text>
 </svg>
