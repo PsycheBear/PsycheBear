@@ -45,39 +45,39 @@
       <line x1="600" y1="80" x2="445" y2="326"/>
       <!-- Backstay (mast top down to stern) -->
       <line x1="600" y1="80" x2="795" y2="322"/>
-      <!-- Shrouds from yard ends to the deck rail -->
-      <line x1="560" y1="140" x2="495" y2="340"/>
-      <line x1="640" y1="140" x2="705" y2="340"/>
-      <line x1="540" y1="195" x2="485" y2="340"/>
-      <line x1="660" y1="195" x2="715" y2="340"/>
-      <line x1="530" y1="250" x2="475" y2="340"/>
-      <line x1="670" y1="250" x2="725" y2="340"/>
+      <!-- Shrouds from yard ends to the deck rail (fan out to match the widening yards) -->
+      <line x1="570" y1="130" x2="505" y2="340"/>
+      <line x1="630" y1="130" x2="695" y2="340"/>
+      <line x1="550" y1="180" x2="490" y2="340"/>
+      <line x1="650" y1="180" x2="710" y2="340"/>
+      <line x1="510" y1="245" x2="470" y2="340"/>
+      <line x1="690" y1="245" x2="730" y2="340"/>
     </g>
 
-    <!-- 3c. LOWER SAIL (biggest, cream like the others) -->
-    <line x1="530" y1="250" x2="670" y2="250" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 530,252 Q 523,270 532,290 Q 600,298 668,290 Q 677,270 670,252 Z"
+    <!-- 3c. LOWER SAIL — main course, dominant sail on the rig (widest + tallest) -->
+    <line x1="510" y1="245" x2="690" y2="245" stroke="#2A2018" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M 510,247 Q 498,282 512,315 Q 600,325 688,315 Q 702,282 690,247 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
-    <!-- Two reefing bands across the lower sail -->
-    <path d="M 532,266 Q 600,272 668,266" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
-    <path d="M 533,282 Q 600,289 667,282" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <!-- Two reefing bands across the main course -->
+    <path d="M 512,272 Q 600,279 688,272" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M 512,298 Q 600,306 688,298" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
 
-    <!-- 3b. MIDDLE SAIL (cream, slight billow) -->
-    <line x1="540" y1="195" x2="660" y2="195" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M 540,197 Q 533,215 542,236 Q 600,244 658,236 Q 667,215 660,197 Z"
-          fill="#F0E8D0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
-    <!-- Reefing band -->
-    <path d="M 542,215 Q 600,221 658,215" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
-
-    <!-- 3a. UPPER SAIL (smallest, cream) -->
-    <line x1="560" y1="140" x2="640" y2="140" stroke="#2A2018" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 560,142 Q 554,160 562,180 Q 600,187 638,180 Q 646,160 640,142 Z"
+    <!-- 3b. MIDDLE SAIL — topsail, clearly smaller than the main course -->
+    <line x1="550" y1="180" x2="650" y2="180" stroke="#2A2018" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M 550,182 Q 542,205 553,228 Q 600,236 647,228 Q 658,205 650,182 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Reefing band -->
+    <path d="M 552,205 Q 600,211 648,205" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
 
-    <!-- 4. CROW'S NEST — small barrel/platform just below the upper yard (on top of the upper sail) -->
-    <path d="M 585,143 L 615,143 L 613,158 L 587,158 Z"
+    <!-- 3a. UPPER SAIL — topgallant, the smallest of the three -->
+    <line x1="570" y1="130" x2="630" y2="130" stroke="#2A2018" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 570,132 Q 564,148 573,163 Q 600,168 627,163 Q 636,148 630,132 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- 4. CROW'S NEST — sits between the flag and the topgallant yard -->
+    <path d="M 585,115 L 615,115 L 613,128 L 587,128 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round"/>
-    <line x1="588" y1="148" x2="612" y2="148" stroke="#2A2018" stroke-width="1"/>
+    <line x1="588" y1="120" x2="612" y2="120" stroke="#2A2018" stroke-width="1"/>
 
     <!-- 5. MAIN FLAG — flies from the new (lower) mast top, safely below the title -->
     <path fill="#2A2018" d="M 600,80 L 660,86 L 653,98 L 660,110 L 600,112 Z">
@@ -243,11 +243,11 @@
         <line x1="552" y1="270" x2="559" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard -->
         <path d="M 559,279 Q 563,283 554,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade — curved spine + curved edge, meeting at a notched tip -->
-        <path d="M 556,272 Q 580,245 611,229 L 614,232 L 613,236 Q 585,253 558,276 Z"
-              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
+        <!-- Cutlass blade — curved spine + curved edge, meeting at a single sharp point -->
+        <path d="M 556,272 Q 584,246 619,226 Q 590,253 558,276 Z"
+              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="miter" stroke-miterlimit="6"/>
         <!-- Blade fuller (follows the curve) -->
-        <path d="M 561,268 Q 583,247 609,233" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 561,268 Q 585,248 614,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -300,11 +300,11 @@
         <line x1="648" y1="270" x2="641" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard (mirrored) -->
         <path d="M 641,279 Q 637,283 646,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Cutlass blade (mirrored) — curved spine + curved edge, notched tip -->
-        <path d="M 644,272 Q 620,245 589,229 L 586,232 L 587,236 Q 615,253 642,276 Z"
-              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
+        <!-- Cutlass blade (mirrored) — curved spine + curved edge, single sharp point -->
+        <path d="M 644,272 Q 616,246 581,226 Q 610,253 642,276 Z"
+              fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="miter" stroke-miterlimit="6"/>
         <!-- Blade fuller (follows the curve) -->
-        <path d="M 639,268 Q 617,247 591,233" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 639,268 Q 615,248 586,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
