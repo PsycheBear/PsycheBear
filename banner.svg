@@ -46,38 +46,38 @@
       <!-- Backstay (mast top down to stern) -->
       <line x1="600" y1="80" x2="795" y2="322"/>
       <!-- Shrouds from yard ends to the deck rail -->
-      <line x1="560" y1="100" x2="495" y2="340"/>
-      <line x1="640" y1="100" x2="705" y2="340"/>
-      <line x1="540" y1="165" x2="485" y2="340"/>
-      <line x1="660" y1="165" x2="715" y2="340"/>
-      <line x1="530" y1="235" x2="475" y2="340"/>
-      <line x1="670" y1="235" x2="725" y2="340"/>
+      <line x1="560" y1="140" x2="495" y2="340"/>
+      <line x1="640" y1="140" x2="705" y2="340"/>
+      <line x1="540" y1="195" x2="485" y2="340"/>
+      <line x1="660" y1="195" x2="715" y2="340"/>
+      <line x1="530" y1="250" x2="475" y2="340"/>
+      <line x1="670" y1="250" x2="725" y2="340"/>
     </g>
 
     <!-- 3c. LOWER SAIL (biggest, cream like the others) -->
-    <line x1="530" y1="235" x2="670" y2="235" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 530,237 Q 523,262 532,288 Q 600,296 668,288 Q 677,262 670,237 Z"
+    <line x1="530" y1="250" x2="670" y2="250" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 530,252 Q 523,270 532,290 Q 600,298 668,290 Q 677,270 670,252 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
     <!-- Two reefing bands across the lower sail -->
-    <path d="M 532,255 Q 600,261 668,255" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
-    <path d="M 533,275 Q 600,282 667,275" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M 532,266 Q 600,272 668,266" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M 533,282 Q 600,289 667,282" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
 
     <!-- 3b. MIDDLE SAIL (cream, slight billow) -->
-    <line x1="540" y1="165" x2="660" y2="165" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M 540,167 Q 533,190 542,213 Q 600,221 658,213 Q 667,190 660,167 Z"
+    <line x1="540" y1="195" x2="660" y2="195" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M 540,197 Q 533,215 542,236 Q 600,244 658,236 Q 667,215 660,197 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
     <!-- Reefing band -->
-    <path d="M 542,188 Q 600,195 658,188" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <path d="M 542,215 Q 600,221 658,215" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
 
     <!-- 3a. UPPER SAIL (smallest, cream) -->
-    <line x1="560" y1="100" x2="640" y2="100" stroke="#2A2018" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M 560,102 Q 554,122 562,142 Q 600,149 638,142 Q 646,122 640,102 Z"
+    <line x1="560" y1="140" x2="640" y2="140" stroke="#2A2018" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 560,142 Q 554,160 562,180 Q 600,187 638,180 Q 646,160 640,142 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
 
     <!-- 4. CROW'S NEST — small barrel/platform just below the upper yard (on top of the upper sail) -->
-    <path d="M 585,103 L 615,103 L 613,118 L 587,118 Z"
+    <path d="M 585,143 L 615,143 L 613,158 L 587,158 Z"
           fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round"/>
-    <line x1="588" y1="108" x2="612" y2="108" stroke="#2A2018" stroke-width="1"/>
+    <line x1="588" y1="148" x2="612" y2="148" stroke="#2A2018" stroke-width="1"/>
 
     <!-- 5. MAIN FLAG — flies from the new (lower) mast top, safely below the title -->
     <path fill="#2A2018" d="M 600,80 L 660,86 L 653,98 L 660,110 L 600,112 Z">
@@ -165,24 +165,38 @@
     <circle cx="783" cy="294" r="0.4" fill="#2A2018"/>
     <circle cx="785" cy="294" r="0.4" fill="#2A2018"/>
 
-    <!-- Crate on deck (front/bow side) — sits flat on the main deck (y=340) -->
+    <!-- Crate on deck (front/bow side) — bottom at y=338 so it sits on the deck plank strip -->
     <g stroke="#2A2018" stroke-width="1.8" fill="#8B5A2B">
-      <rect x="472" y="318" width="22" height="22"/>
-      <line x1="483" y1="318" x2="483" y2="340" stroke-width="1"/>
-      <line x1="472" y1="329" x2="494" y2="329" stroke-width="1"/>
+      <rect x="472" y="316" width="22" height="22"/>
+      <line x1="483" y1="316" x2="483" y2="338" stroke-width="1"/>
+      <line x1="472" y1="327" x2="494" y2="327" stroke-width="1"/>
     </g>
 
-    <!-- Barrel on deck (stern side) — proper curved body + two bands -->
+    <!-- Barrel on deck (stern side) — bottom at y=338 so it sits on the deck plank strip -->
     <g stroke="#2A2018" stroke-width="1.5" fill="#8B5A2B">
       <!-- Body with slightly bulging staves -->
-      <path d="M 730,316 Q 728,325 730,334 Q 740,338 750,334 Q 752,325 750,316 Q 740,320 730,316 Z"/>
+      <path d="M 730,314 Q 728,324 730,334 Q 740,340 750,334 Q 752,324 750,314 Q 740,318 730,314 Z"/>
       <!-- Top rim -->
-      <ellipse cx="740" cy="316" rx="10" ry="3"/>
+      <ellipse cx="740" cy="314" rx="10" ry="3"/>
       <!-- Top opening (inner ellipse) -->
-      <ellipse cx="740" cy="316" rx="7.5" ry="2" fill="none" stroke-width="0.8"/>
+      <ellipse cx="740" cy="314" rx="7.5" ry="2" fill="none" stroke-width="0.8"/>
       <!-- Two horizontal bands -->
-      <path d="M 730,322 Q 740,325 750,322" fill="none" stroke-width="1"/>
+      <path d="M 730,321 Q 740,324 750,321" fill="none" stroke-width="1"/>
       <path d="M 730,328 Q 740,331 750,328" fill="none" stroke-width="1"/>
+    </g>
+
+    <!-- Second crate on deck (bow side, stacked-ish) -->
+    <g stroke="#2A2018" stroke-width="1.6" fill="#6B4423">
+      <rect x="496" y="324" width="14" height="14"/>
+      <line x1="503" y1="324" x2="503" y2="338" stroke-width="0.8"/>
+      <line x1="496" y1="331" x2="510" y2="331" stroke-width="0.8"/>
+    </g>
+
+    <!-- Coiled rope on deck (stern side) -->
+    <g stroke="#2A2018" stroke-width="1.2" fill="none">
+      <ellipse cx="715" cy="336" rx="8" ry="2.5"/>
+      <ellipse cx="715" cy="334" rx="6" ry="2"/>
+      <ellipse cx="715" cy="332" rx="4" ry="1.5"/>
     </g>
 
     <!-- ═══════════════════════════════════════════ -->
