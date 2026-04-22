@@ -172,27 +172,46 @@
           fill="#F5EFE0" stroke="#2A2018" stroke-width="2"/>
     <line x1="584" y1="122" x2="616" y2="122" stroke="#2A2018" stroke-width="1.5"/>
 
-    <!-- Yard arm (horizontal spar the sail hangs from) -->
-    <line x1="510" y1="140" x2="690" y2="140" stroke="#2A2018" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- ═══ TRIANGULAR MAINSAIL (dark pirate sail with skull) ═══ -->
+    <!-- Gaff/boom along the back edge of the sail -->
+    <line x1="600" y1="128" x2="712" y2="254" stroke="#2A2018" stroke-width="2" stroke-linecap="round"/>
+    <!-- Boom at the foot -->
+    <line x1="600" y1="280" x2="712" y2="254" stroke="#2A2018" stroke-width="2" stroke-linecap="round"/>
 
-    <!-- Main square-rigged sail — billowing from wind, one big panel -->
-    <path d="M 525,142 Q 520,200 530,270 Q 600,290 670,270 Q 680,200 675,142 Z"
-          fill="#F0E8D0" stroke="#2A2018" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- The sail itself — large triangle leaning back from the mast -->
+    <path d="M 600,128 Q 660,195 710,252 Q 660,275 600,278 Z"
+          fill="#2A2018" stroke="#2A2018" stroke-width="2.5" stroke-linejoin="round"/>
 
-    <!-- Central seam -->
-    <line x1="600" y1="142" x2="600" y2="283" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <!-- Skull-and-crossbones painted on the sail (white on dark) -->
+    <g stroke="#F5EFE0" stroke-width="2.2" stroke-linecap="round" fill="none">
+      <line x1="625" y1="200" x2="660" y2="232"/>
+      <line x1="625" y1="232" x2="660" y2="200"/>
+    </g>
+    <g fill="#F5EFE0">
+      <circle cx="623" cy="198" r="2.2"/>
+      <circle cx="662" cy="234" r="2.2"/>
+      <circle cx="623" cy="234" r="2.2"/>
+      <circle cx="662" cy="198" r="2.2"/>
+    </g>
+    <circle cx="643" cy="216" r="8" fill="#F5EFE0"/>
+    <circle cx="639" cy="214" r="2" fill="#2A2018"/>
+    <circle cx="647" cy="214" r="2" fill="#2A2018"/>
+    <path d="M 643,219 L 640,222 L 646,222 Z" fill="#2A2018"/>
+    <rect x="635" y="221" width="16" height="2.3" fill="#F5EFE0"/>
+    <g stroke="#2A2018" stroke-width="0.8">
+      <line x1="638" y1="221" x2="638" y2="223.5"/>
+      <line x1="643" y1="221" x2="643" y2="223.5"/>
+      <line x1="648" y1="221" x2="648" y2="223.5"/>
+    </g>
 
-    <!-- Horizontal reefing bands (curve with billow) -->
-    <path d="M 528,195 Q 600,207 672,195" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
-    <path d="M 529,240 Q 600,253 671,240" fill="none" stroke="#2A2018" stroke-width="1" stroke-dasharray="3 2"/>
+    <!-- Small triangular staysail filling the gap between mainmast and jib -->
+    <path d="M 600,130 Q 565,180 515,225 Q 555,228 600,222 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
+    <line x1="515" y1="225" x2="600" y2="130" stroke="#2A2018" stroke-width="0.6" stroke-dasharray="2 2"/>
 
-    <!-- Yard tie ropes from corners to mast -->
-    <line x1="525" y1="142" x2="600" y2="138" stroke="#2A2018" stroke-width="1"/>
-    <line x1="675" y1="142" x2="600" y2="138" stroke="#2A2018" stroke-width="1"/>
-
-    <!-- Ropes from mast to deck corners -->
-    <line x1="600" y1="118" x2="470" y2="330" stroke="#2A2018" stroke-width="1.5"/>
-    <line x1="600" y1="118" x2="735" y2="330" stroke="#2A2018" stroke-width="1.5"/>
+    <!-- Shrouds — side ropes below the sails -->
+    <line x1="600" y1="285" x2="490" y2="340" stroke="#2A2018" stroke-width="1"/>
+    <line x1="600" y1="285" x2="710" y2="340" stroke="#2A2018" stroke-width="1"/>
 
     <!-- Bowsprit — pole extending forward from the forecastle -->
     <line x1="445" y1="326" x2="378" y2="304" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
@@ -401,25 +420,31 @@
       <ellipse cx="200" cy="75" rx="75" ry="20"
                fill="#F5EFE0" stroke="#2A2018" stroke-width="2.5"/>
 
-      <!-- Envelope rivets along the top seam -->
-      <g fill="#2A2018">
-        <circle cx="140" cy="62" r="1"/>
-        <circle cx="160" cy="58" r="1"/>
-        <circle cx="180" cy="56" r="1"/>
-        <circle cx="200" cy="55" r="1"/>
-        <circle cx="220" cy="56" r="1"/>
-        <circle cx="240" cy="58" r="1"/>
-        <circle cx="260" cy="62" r="1"/>
+      <!-- Diamond lattice pattern on envelope -->
+      <g stroke="#2A2018" stroke-width="0.8" fill="none" opacity="0.6" stroke-linecap="round">
+        <!-- Diagonals going up-right (NW to SE across envelope) -->
+        <path d="M 140,85 Q 165,72 195,60"/>
+        <path d="M 160,90 Q 190,75 225,60"/>
+        <path d="M 185,92 Q 215,77 250,62"/>
+        <path d="M 215,92 Q 240,80 265,70"/>
+        <!-- Diagonals going up-left (NE to SW) -->
+        <path d="M 140,65 Q 165,78 195,90"/>
+        <path d="M 160,60 Q 190,75 225,90"/>
+        <path d="M 185,58 Q 215,73 250,88"/>
+        <path d="M 215,58 Q 240,70 265,80"/>
       </g>
       <!-- Hull seam across envelope -->
       <line x1="130" y1="75" x2="270" y2="75"
             stroke="#2A2018" stroke-width="0.8" stroke-dasharray="3 2"/>
 
-      <!-- Rigging from envelope down to gondola -->
-      <line x1="165" y1="93" x2="170" y2="110" stroke="#2A2018" stroke-width="1.2"/>
-      <line x1="185" y1="94" x2="185" y2="110" stroke="#2A2018" stroke-width="1.2"/>
-      <line x1="215" y1="94" x2="215" y2="110" stroke="#2A2018" stroke-width="1.2"/>
-      <line x1="235" y1="93" x2="230" y2="110" stroke="#2A2018" stroke-width="1.2"/>
+      <!-- Rigging from envelope down to gondola — denser, spread to the ends -->
+      <line x1="138" y1="85" x2="165" y2="110" stroke="#2A2018" stroke-width="1"/>
+      <line x1="160" y1="92" x2="170" y2="110" stroke="#2A2018" stroke-width="1.1"/>
+      <line x1="180" y1="94" x2="180" y2="110" stroke="#2A2018" stroke-width="1.1"/>
+      <line x1="200" y1="95" x2="200" y2="110" stroke="#2A2018" stroke-width="1.1"/>
+      <line x1="220" y1="94" x2="220" y2="110" stroke="#2A2018" stroke-width="1.1"/>
+      <line x1="240" y1="92" x2="230" y2="110" stroke="#2A2018" stroke-width="1.1"/>
+      <line x1="262" y1="85" x2="235" y2="110" stroke="#2A2018" stroke-width="1"/>
 
       <!-- Gondola (cabin) -->
       <path d="M 165,110 L 235,110 L 240,128 L 160,128 Z"
