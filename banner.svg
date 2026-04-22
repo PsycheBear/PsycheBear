@@ -54,30 +54,30 @@
     </g>
   </g>
 
-  <!-- Shark swimming across (outside the ship group so it doesn't rock) -->
+  <!-- Shark swimming across — full anatomy, facing right (outside ship group) -->
   <g>
     <animateTransform attributeName="transform" type="translate"
-                      values="-110,0; 1300,0"
-                      dur="28s" repeatCount="indefinite"/>
-    <!-- Tail fin (crescent) -->
-    <path d="M 110,362 L 95,344 L 105,360 L 95,378 Z" fill="#2A2018"/>
-    <!-- Body back — breaks the water surface -->
-    <path d="M 110,362 Q 120,354 145,351 Q 175,349 195,356 Q 202,358 205,363 Z"
+                      values="-260,0; 1280,0"
+                      dur="30s" repeatCount="indefinite"/>
+    <!-- Body silhouette: snout, dorsal fin, second dorsal, tail, belly -->
+    <path d="M 228,362 Q 222,355 208,352 Q 198,350 192,352 L 175,330 L 172,352 Q 160,355 148,358 L 141,349 L 135,358 Q 125,360 115,361 L 95,340 L 108,361 L 100,380 L 115,361 Q 140,374 175,373 Q 210,372 220,368 Q 225,365 228,362 Z"
           fill="#F5EFE0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
-    <!-- Belly hint (submerged, dashed) -->
-    <path d="M 112,362 Q 155,376 203,363"
-          stroke="#2A2018" stroke-width="1.2" fill="none"
-          stroke-dasharray="3 2" stroke-linecap="round"/>
-    <!-- Dorsal fin -->
-    <path d="M 140,352 L 158,332 L 172,352 Z" fill="#2A2018"/>
+    <!-- Pectoral fin hanging below the body -->
+    <path d="M 195,370 L 178,382 L 210,370 Z"
+          fill="#F5EFE0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Gill slits (five diagonals behind the head) -->
+    <g stroke="#2A2018" stroke-width="1" fill="none" stroke-linecap="round">
+      <line x1="213" y1="358" x2="211" y2="365"/>
+      <line x1="209" y1="358" x2="207" y2="365"/>
+      <line x1="205" y1="358" x2="203" y2="365"/>
+      <line x1="201" y1="358" x2="199" y2="365"/>
+      <line x1="197" y1="358" x2="195" y2="365"/>
+    </g>
     <!-- Eye -->
-    <circle cx="195" cy="357" r="1.5" fill="#2A2018"/>
-    <!-- Evil toothy grin -->
-    <path d="M 183,362 L 185,365 L 187,362 L 189,365 L 191,362 L 193,365 L 195,362"
+    <circle cx="219" cy="359" r="1.5" fill="#2A2018"/>
+    <!-- Tiny toothy grin -->
+    <path d="M 221,369 L 223,371 L 225,369 L 227,371 L 229,369"
           stroke="#2A2018" stroke-width="0.9" fill="none"/>
-    <!-- Wake splashes ahead of the shark -->
-    <path d="M 210,368 Q 218,365 225,368" stroke="#2A2018" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-    <path d="M 215,374 Q 222,372 227,374" stroke="#2A2018" stroke-width="1" fill="none" stroke-linecap="round"/>
   </g>
 
   <!-- The whole ship group rocks gently -->
@@ -274,16 +274,18 @@
                         values="0,0; 0,-4; 0,2; 0,-2; 0,0"
                         dur="4.5s" repeatCount="indefinite"/>
 
-      <!-- Trailing rope + ribbon (behind the airship, stern-tethered) -->
-      <line x1="125" y1="95" x2="80" y2="115" stroke="#2A2018" stroke-width="1.2"/>
-      <path d="M 80,115 L -140,113 L -140,135 L 80,137 Z"
+      <!-- Trailing ribbon — attached directly to the gondola stern, waves in the wind -->
+      <!-- Two short tie cords anchor it to the gondola corner -->
+      <line x1="162" y1="115" x2="155" y2="120" stroke="#2A2018" stroke-width="1"/>
+      <line x1="162" y1="127" x2="155" y2="140" stroke="#2A2018" stroke-width="1"/>
+      <path d="M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z"
             fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round">
-        <animate attributeName="d" dur="2.8s" repeatCount="indefinite"
-          values="M 80,115 L -140,113 L -140,135 L 80,137 Z;
-                  M 80,115 L -140,118 L -140,140 L 80,137 Z;
-                  M 80,115 L -140,113 L -140,135 L 80,137 Z"/>
+        <animate attributeName="d" dur="2s" repeatCount="indefinite"
+          values="M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z;
+                  M 160,120 Q 110,124 60,120 Q 10,116 -40,120 Q -90,124 -140,120 L -140,142 Q -90,146 -40,142 Q 10,138 60,142 Q 110,146 160,142 Z;
+                  M 160,120 Q 110,116 60,120 Q 10,124 -40,120 Q -90,116 -140,120 L -140,142 Q -90,138 -40,142 Q 10,146 60,142 Q 110,138 160,142 Z"/>
       </path>
-      <text x="-30" y="129" font-family="'Courier New', Courier, monospace"
+      <text x="10" y="134" font-family="'Courier New', Courier, monospace"
             font-size="10" font-weight="bold"
             fill="#2A2018" text-anchor="middle">NO TESTS, JUST PUSH &amp; COMMIT</text>
 
