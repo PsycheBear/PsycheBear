@@ -41,16 +41,44 @@
                 M -40,375 Q 60,370 160,375 Q 260,380 360,375 Q 460,370 560,375 Q 660,380 760,375 Q 860,370 960,375 Q 1060,380 1160,375 Q 1240,370 1240,375 L 1240,400 L -40,400 Z"/>
     </path>
 
-    <!-- Floating ripple marks — scattered ink ~~ in the water -->
-    <g stroke="#2A2018" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.5">
-      <path d="M 60,385 Q 70,382 80,385"/>
-      <path d="M 260,390 Q 270,388 280,390"/>
-      <path d="M 340,385 Q 350,383 360,385"/>
-      <path d="M 540,388 Q 550,385 560,388"/>
-      <path d="M 720,392 Q 730,389 740,392"/>
-      <path d="M 860,385 Q 870,382 880,385"/>
-      <path d="M 980,390 Q 990,388 1000,390"/>
-      <path d="M 1120,388 Q 1130,385 1140,388"/>
+    <!-- Wave crest marks — tiny ˘ shapes scattered across the water for texture -->
+    <g stroke="#2A2018" fill="none" stroke-linecap="round">
+      <!-- Upper water (smaller, fainter crests just under the surface) -->
+      <g stroke-width="0.8" opacity="0.4">
+        <path d="M 80,360 Q 84,358 88,360"/>
+        <path d="M 155,363 Q 160,361 165,363"/>
+        <path d="M 245,358 Q 251,356 257,358"/>
+        <path d="M 320,362 Q 326,360 332,362"/>
+        <path d="M 395,358 Q 401,356 407,358"/>
+        <path d="M 865,362 Q 871,360 877,362"/>
+        <path d="M 940,358 Q 946,356 952,358"/>
+        <path d="M 1030,362 Q 1036,360 1042,362"/>
+        <path d="M 1110,358 Q 1116,356 1122,358"/>
+      </g>
+      <!-- Mid water -->
+      <g stroke-width="0.9" opacity="0.5">
+        <path d="M 55,378 Q 63,375 71,378"/>
+        <path d="M 140,382 Q 148,379 156,382"/>
+        <path d="M 215,376 Q 223,373 231,376"/>
+        <path d="M 295,380 Q 303,377 311,380"/>
+        <path d="M 370,376 Q 378,373 386,376"/>
+        <path d="M 840,380 Q 848,377 856,380"/>
+        <path d="M 915,376 Q 923,373 931,376"/>
+        <path d="M 990,380 Q 998,377 1006,380"/>
+        <path d="M 1065,376 Q 1073,373 1081,376"/>
+        <path d="M 1140,380 Q 1148,377 1156,380"/>
+      </g>
+      <!-- Deeper water (scattered, smaller) -->
+      <g stroke-width="0.8" opacity="0.45">
+        <path d="M 100,392 Q 106,390 112,392"/>
+        <path d="M 180,395 Q 186,393 192,395"/>
+        <path d="M 260,390 Q 266,388 272,390"/>
+        <path d="M 340,393 Q 346,391 352,393"/>
+        <path d="M 880,395 Q 886,393 892,395"/>
+        <path d="M 960,392 Q 966,390 972,392"/>
+        <path d="M 1040,395 Q 1046,393 1052,395"/>
+        <path d="M 1120,390 Q 1126,388 1132,390"/>
+      </g>
     </g>
   </g>
 
