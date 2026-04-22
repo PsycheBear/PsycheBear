@@ -201,23 +201,23 @@
         <animateTransform attributeName="transform" type="rotate"
                           values="-5 515 287; -28 515 287; -10 515 287; 15 515 287; -5 515 287"
                           dur="1.3s" repeatCount="indefinite"/>
-        <!-- Forearm (extended forward, slight upward) -->
+        <!-- Forearm (extended forward from shoulder to fist) -->
         <line x1="515" y1="287" x2="548" y2="280"/>
         <!-- Fist wrapping around the hilt -->
         <circle cx="548" cy="280" r="3.2" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.4"/>
-        <!-- Pommel sticking out below the fist (butt end of the hilt) -->
-        <circle cx="545" cy="285" r="1.8" fill="#2A2018" stroke="none"/>
-        <!-- Wrapped grip — almost vertical, emerges up out of the fist -->
-        <line x1="550" y1="277" x2="552" y2="265" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
-        <!-- Crossguard (quillons) — horizontal, perpendicular to the near-vertical grip -->
-        <line x1="546" y1="263" x2="558" y2="266" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
-        <!-- D-knuckle guard looping from the crossguard back toward the fist -->
-        <path d="M 557,266 Q 562,273 553,273" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Straight blade emerging upward/forward from the crossguard -->
-        <path d="M 553,262 L 611,229 L 615,232 L 557,266 Z"
+        <!-- Pommel peeking out behind the fist -->
+        <circle cx="545" cy="283" r="1.7" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip — aligned with the sword axis (fist → tip is one straight line) -->
+        <line x1="549" y1="279" x2="554" y2="275" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
+        <!-- Crossguard (quillons) — perpendicular to the sword, at the hilt/blade junction -->
+        <line x1="552" y1="270" x2="559" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- D-knuckle guard -->
+        <path d="M 559,279 Q 563,283 554,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <!-- Blade — straight, collinear with the hilt (one unbroken line from grip to tip) -->
+        <path d="M 556,272 L 612,228 L 614,232 L 558,276 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
-        <!-- Blade fuller (straight groove line) -->
-        <path d="M 558,261 L 611,232" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <!-- Blade fuller -->
+        <path d="M 560,271 L 612,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -262,19 +262,19 @@
         <line x1="685" y1="287" x2="652" y2="280"/>
         <!-- Fist wrapping around the hilt -->
         <circle cx="652" cy="280" r="3.2" fill="#F5EFE0" stroke="#2A2018" stroke-width="1.4"/>
-        <!-- Pommel sticking out below -->
-        <circle cx="655" cy="285" r="1.8" fill="#2A2018" stroke="none"/>
-        <!-- Wrapped grip — vertical, up out of the fist -->
-        <line x1="650" y1="277" x2="648" y2="265" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
-        <!-- Crossguard — horizontal -->
-        <line x1="654" y1="263" x2="642" y2="266" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- Pommel peeking out behind the fist -->
+        <circle cx="655" cy="283" r="1.7" fill="#2A2018" stroke="none"/>
+        <!-- Wrapped grip — aligned with the sword axis -->
+        <line x1="651" y1="279" x2="646" y2="275" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
+        <!-- Crossguard — perpendicular at the hilt/blade junction -->
+        <line x1="648" y1="270" x2="641" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard (mirrored) -->
-        <path d="M 643,266 Q 638,273 647,273" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Straight blade (mirrored) -->
-        <path d="M 647,262 L 589,229 L 585,232 L 643,266 Z"
+        <path d="M 641,279 Q 637,283 646,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <!-- Blade — straight, collinear with the hilt (mirrored) -->
+        <path d="M 644,272 L 588,228 L 586,232 L 642,276 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
         <!-- Blade fuller -->
-        <path d="M 642,261 L 589,232" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path d="M 640,271 L 588,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
