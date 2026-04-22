@@ -163,16 +163,9 @@
     <!-- Deck line -->
     <line x1="435" y1="340" x2="765" y2="340" stroke="#2A2018" stroke-width="2.5"/>
 
-    <!-- Railing posts -->
-    <g stroke="#2A2018" stroke-width="2">
-      <line x1="440" y1="325" x2="440" y2="340"/>
-      <line x1="478" y1="325" x2="478" y2="340"/>
-      <line x1="555" y1="325" x2="555" y2="340"/>
-      <line x1="645" y1="325" x2="645" y2="340"/>
-      <line x1="722" y1="325" x2="722" y2="340"/>
-      <line x1="760" y1="325" x2="760" y2="340"/>
-    </g>
-    <line x1="438" y1="325" x2="762" y2="325" stroke="#2A2018" stroke-width="2.5"/>
+    <!-- (Railing removed — the horizontal top bar at y=325 was cutting through
+         the figures' legs at knee level, making them look like they were
+         standing on a railing instead of the deck.) -->
 
     <!-- Hull -->
     <path d="M 430,340 L 770,340 L 738,388 L 462,388 Z"
@@ -341,9 +334,10 @@
                   M 162,108 Q 110,112 60,108 Q 10,104 -38,108 L -38,130 Q 10,126 60,130 Q 110,134 162,130 Z;
                   M 162,108 Q 110,104 60,108 Q 10,112 -38,108 L -38,130 Q 10,134 60,130 Q 110,126 162,130 Z"/>
       </path>
-      <text x="62" y="122" font-family="'Courier New', Courier, monospace"
-            font-size="9" font-weight="bold"
-            fill="#2A2018" text-anchor="middle">NO TESTS, JUST PUSH &amp; COMMIT</text>
+      <text x="62" y="123" font-family="'Courier New', Courier, monospace"
+            font-size="10" font-weight="900"
+            fill="#2A2018" stroke="#2A2018" stroke-width="0.4"
+            text-anchor="middle">NO TESTS, JUST PUSH &amp; COMMIT</text>
 
       <!-- Envelope (gas balloon) centered at (200, 75) -->
       <ellipse cx="200" cy="75" rx="75" ry="20"
