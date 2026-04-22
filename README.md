@@ -2,9 +2,9 @@
   <img src="./banner.svg" alt="Two stick figures sword fighting on a pirate ship" width="100%" />
 </p>
 
-### hi, i'm psyche
+### Discord: Psychede1icBear
 
-i build things. games mostly, sometimes tools, sometimes trouble.
+I hate you
 
 ---
 
