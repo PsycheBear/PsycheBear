@@ -8,7 +8,7 @@ I hate you
 
 ## Heyyo, I'm Psyche!
 
-I build things on the web and sometimes on the metal underneath it — frontend in TypeScript and React, backend and tooling in Python and Rust. I like hand-drawn SVGs, animations that earn their frame budget, and ship dates that don't slip.
+I'm a software engineer working across the stack — frontend in TypeScript and React, backend and tooling in Python and Rust. My focus is on polished interfaces, performant animation, and reliable delivery.
 
 ### Socials
 
@@ -39,6 +39,6 @@ I build things on the web and sometimes on the metal underneath it — frontend 
     <img src="https://github-readme-stats.vercel.app/api?username=PsycheBear&show_icons=true&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&icon_color=2A2018" alt="PsycheBear's GitHub stats" />
   </a>
   <a href="https://github.com/PsycheBear">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsycheBear&layout=compact&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018" alt="PsycheBear's top languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsycheBear&layout=compact&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&hide=html,css&size_weight=0.5&count_weight=0.5" alt="PsycheBear's top languages" />
   </a>
 </p>
