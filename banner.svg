@@ -12,10 +12,82 @@
   <circle cx="970" cy="85" r="4" fill="none" stroke="#2A2018" stroke-width="1.5"/>
   <circle cx="990" cy="100" r="3" fill="none" stroke="#2A2018" stroke-width="1.5"/>
 
-  <!-- Clouds -->
-  <g fill="none" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
-    <path d="M 100,80 Q 130,62 160,80 Q 180,70 200,85"/>
+  <!-- Floating rock islands — Studio Ghibli / steampunk vibe, hovering in midair with a gentle bob -->
+  <!-- Island 1: upper-left, medium -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,0; 0,-3; 0,2; 0,0"
+                      dur="7s" repeatCount="indefinite"/>
+    <!-- Rock chunk, wider at top, tapering downward -->
+    <path d="M 80,180 Q 100,172 130,176 Q 165,172 185,182 Q 192,200 172,218 Q 150,232 128,228 Q 100,222 85,200 Q 75,188 80,180 Z"
+          fill="#BDA07A" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 115,198 L 122,215" stroke="#2A2018" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M 155,194 Q 160,208 152,220" stroke="#2A2018" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <!-- Grass cap -->
+    <path d="M 80,180 Q 130,170 185,182 L 183,189 Q 130,178 82,188 Z"
+          fill="#A8BC82" stroke="#2A2018" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- Grass tufts -->
+    <g stroke="#2A2018" stroke-width="0.9" fill="none" stroke-linecap="round">
+      <path d="M 98,179 L 100,175 L 102,179"/>
+      <path d="M 163,177 L 165,173 L 167,177"/>
+    </g>
+    <!-- Trees -->
+    <line x1="140" y1="175" x2="140" y2="160" stroke="#2A2018" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="140" cy="155" r="6" fill="#A8BC82" stroke="#2A2018" stroke-width="1.4"/>
+    <line x1="120" y1="177" x2="120" y2="168" stroke="#2A2018" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="120" cy="164" r="3.5" fill="#A8BC82" stroke="#2A2018" stroke-width="1.3"/>
+  </g>
+
+  <!-- Island 2: upper-right, medium — slightly slower bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,0; 0,-2; 0,3; 0,0"
+                      dur="8s" repeatCount="indefinite" begin="-2s"/>
+    <path d="M 1020,165 Q 1045,158 1075,163 Q 1110,165 1130,173 Q 1138,192 1120,212 Q 1095,228 1070,223 Q 1040,218 1025,193 Q 1012,178 1020,165 Z"
+          fill="#BDA07A" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M 1060,188 L 1066,205" stroke="#2A2018" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M 1095,182 Q 1097,198 1090,210" stroke="#2A2018" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <path d="M 1020,165 Q 1075,155 1130,173 L 1128,180 Q 1075,165 1022,173 Z"
+          fill="#A8BC82" stroke="#2A2018" stroke-width="1.4" stroke-linejoin="round"/>
+    <g stroke="#2A2018" stroke-width="0.9" fill="none" stroke-linecap="round">
+      <path d="M 1045,163 L 1047,159 L 1049,163"/>
+      <path d="M 1108,168 L 1110,164 L 1112,168"/>
+    </g>
+    <line x1="1075" y1="161" x2="1075" y2="146" stroke="#2A2018" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="1075" cy="141" r="6.5" fill="#A8BC82" stroke="#2A2018" stroke-width="1.4"/>
+  </g>
+
+  <!-- Island 3: small, mid-left, faster shorter bob -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+                      values="0,0; 0,-2; 0,1; 0,0"
+                      dur="5s" repeatCount="indefinite" begin="-1s"/>
+    <path d="M 290,258 Q 312,252 335,257 Q 345,268 333,282 Q 318,292 305,288 Q 288,280 290,258 Z"
+          fill="#BDA07A" stroke="#2A2018" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M 290,258 Q 312,250 335,257 L 334,262 Q 312,256 292,263 Z"
+          fill="#A8BC82" stroke="#2A2018" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M 302,255 L 304,251 L 306,255" stroke="#2A2018" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    <line x1="315" y1="255" x2="315" y2="245" stroke="#2A2018" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="315" cy="242" r="3.5" fill="#A8BC82" stroke="#2A2018" stroke-width="1.2"/>
+  </g>
+
+  <!-- Clouds — parallax drift across the sky -->
+  <!-- Background clouds: smaller, fainter, slower drift (90s) -->
+  <g fill="none" stroke="#2A2018" stroke-width="1.4" stroke-linecap="round" opacity="0.55">
+    <animateTransform attributeName="transform" type="translate"
+                      values="-350,0; 1550,0"
+                      dur="90s" repeatCount="indefinite" begin="-50s"/>
     <path d="M 280,130 Q 310,110 340,130"/>
+    <path d="M 370,175 Q 385,167 400,175"/>
+    <path d="M 1050,140 Q 1068,130 1086,140"/>
+    <path d="M 900,30 Q 914,23 928,30"/>
+  </g>
+  <!-- Foreground clouds: larger, full opacity, faster drift (60s) -->
+  <g fill="none" stroke="#2A2018" stroke-width="2" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="translate"
+                      values="-350,0; 1550,0"
+                      dur="60s" repeatCount="indefinite" begin="-30s"/>
+    <path d="M 100,80 Q 130,62 160,80 Q 180,70 200,85"/>
     <path d="M 850,70 Q 880,50 910,70 Q 930,60 950,75"/>
   </g>
 
@@ -24,6 +96,53 @@
     <path d="M 420,95 Q 428,88 436,95 Q 444,88 452,95"/>
     <path d="M 510,75 Q 517,69 524,75 Q 531,69 538,75"/>
     <path d="M 760,110 Q 767,104 774,110 Q 781,104 788,110"/>
+  </g>
+
+  <!-- Animated flock — six tiny M-shaped birds flying right across the upper sky in a loose V, ~30s per pass, with a subtle wing-flap -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+                      values="-80,0; 1320,0"
+                      dur="30s" repeatCount="indefinite" begin="-12s"/>
+    <g fill="none" stroke="#2A2018" stroke-width="1.5" stroke-linecap="round">
+      <!-- Leader bird, front of V -->
+      <path d="M 0,120 Q 3,117 6,120 Q 9,117 12,120">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M 0,120 Q 3,117 6,120 Q 9,117 12,120;
+                  M 0,120 Q 3,119 6,120 Q 9,119 12,120;
+                  M 0,120 Q 3,117 6,120 Q 9,117 12,120"/>
+      </path>
+      <!-- Trailing birds, offset left and up/down for a loose V -->
+      <path d="M -14,124 Q -11,121 -8,124 Q -5,121 -2,124">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M -14,124 Q -11,121 -8,124 Q -5,121 -2,124;
+                  M -14,124 Q -11,123 -8,124 Q -5,123 -2,124;
+                  M -14,124 Q -11,121 -8,124 Q -5,121 -2,124"/>
+      </path>
+      <path d="M -14,116 Q -11,113 -8,116 Q -5,113 -2,116">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M -14,116 Q -11,113 -8,116 Q -5,113 -2,116;
+                  M -14,116 Q -11,115 -8,116 Q -5,115 -2,116;
+                  M -14,116 Q -11,113 -8,116 Q -5,113 -2,116"/>
+      </path>
+      <path d="M -28,127 Q -25,124 -22,127 Q -19,124 -16,127">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M -28,127 Q -25,124 -22,127 Q -19,124 -16,127;
+                  M -28,127 Q -25,126 -22,127 Q -19,126 -16,127;
+                  M -28,127 Q -25,124 -22,127 Q -19,124 -16,127"/>
+      </path>
+      <path d="M -28,113 Q -25,110 -22,113 Q -19,110 -16,113">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M -28,113 Q -25,110 -22,113 Q -19,110 -16,113;
+                  M -28,113 Q -25,112 -22,113 Q -19,112 -16,113;
+                  M -28,113 Q -25,110 -22,113 Q -19,110 -16,113"/>
+      </path>
+      <path d="M -42,120 Q -39,117 -36,120 Q -33,117 -30,120">
+        <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
+          values="M -42,120 Q -39,117 -36,120 Q -33,117 -30,120;
+                  M -42,120 Q -39,119 -36,120 Q -33,119 -30,120;
+                  M -42,120 Q -39,117 -36,120 Q -33,117 -30,120"/>
+      </path>
+    </g>
   </g>
 
   <!-- The whole ship group rocks gently -->
