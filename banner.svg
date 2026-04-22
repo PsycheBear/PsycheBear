@@ -36,15 +36,15 @@
     <!-- SHIP RIG — vertical mast, three yards, three stacked sails  -->
     <!-- ═══════════════════════════════════════════════════════════ -->
 
-    <!-- 1. CLEAR VERTICAL MAINMAST — primary visual anchor (mast top lowered to clear the title) -->
-    <line x1="600" y1="58" x2="600" y2="340" stroke="#2A2018" stroke-width="4"/>
+    <!-- 1. CLEAR VERTICAL MAINMAST — primary visual anchor (mast top well below the title) -->
+    <line x1="600" y1="78" x2="600" y2="340" stroke="#2A2018" stroke-width="4"/>
 
     <!-- 6. CLEAN RIGGING (thin, 50% opacity, behind the sails) -->
     <g stroke="#2A2018" stroke-width="1" opacity="0.5" stroke-linecap="round">
       <!-- Forestay (mast top down to bow) -->
-      <line x1="600" y1="60" x2="445" y2="326"/>
+      <line x1="600" y1="80" x2="445" y2="326"/>
       <!-- Backstay (mast top down to stern) -->
-      <line x1="600" y1="60" x2="795" y2="322"/>
+      <line x1="600" y1="80" x2="795" y2="322"/>
       <!-- Shrouds from yard ends to the deck rail -->
       <line x1="560" y1="100" x2="495" y2="340"/>
       <line x1="640" y1="100" x2="705" y2="340"/>
@@ -79,12 +79,12 @@
           fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round"/>
     <line x1="588" y1="108" x2="612" y2="108" stroke="#2A2018" stroke-width="1"/>
 
-    <!-- 5. MAIN FLAG at the very top — big Jolly Roger, gently waves (shifted down 18 to clear the title) -->
-    <path fill="#2A2018" d="M 600,60 L 660,66 L 653,78 L 660,90 L 600,92 Z">
+    <!-- 5. MAIN FLAG — flies from the new (lower) mast top, safely below the title -->
+    <path fill="#2A2018" d="M 600,80 L 660,86 L 653,98 L 660,110 L 600,112 Z">
       <animate attributeName="d" dur="1.8s" repeatCount="indefinite"
-        values="M 600,60 L 660,66 L 653,78 L 660,90 L 600,92 Z;
-                M 600,60 L 660,56 L 662,78 L 660,86 L 600,92 Z;
-                M 600,60 L 660,66 L 653,78 L 660,90 L 600,92 Z"/>
+        values="M 600,80 L 660,86 L 653,98 L 660,110 L 600,112 Z;
+                M 600,80 L 660,76 L 662,98 L 660,106 L 600,112 Z;
+                M 600,80 L 660,86 L 653,98 L 660,110 L 600,112 Z"/>
     </path>
     <!-- Skull-and-crossbones on the flag — waves with the flag on the same 1.8s beat -->
     <g>
@@ -93,25 +93,25 @@
                         dur="1.8s" repeatCount="indefinite"/>
       <!-- Crossbones -->
       <g stroke="#F5EFE0" stroke-width="1.8" stroke-linecap="round" fill="none">
-        <line x1="614" y1="66" x2="644" y2="90"/>
-        <line x1="614" y1="90" x2="644" y2="66"/>
+        <line x1="614" y1="86" x2="644" y2="110"/>
+        <line x1="614" y1="110" x2="644" y2="86"/>
       </g>
       <g fill="#F5EFE0">
-        <circle cx="613" cy="66" r="1.7"/>
-        <circle cx="646" cy="90" r="1.7"/>
-        <circle cx="613" cy="90" r="1.7"/>
-        <circle cx="646" cy="66" r="1.7"/>
+        <circle cx="613" cy="86" r="1.7"/>
+        <circle cx="646" cy="110" r="1.7"/>
+        <circle cx="613" cy="110" r="1.7"/>
+        <circle cx="646" cy="86" r="1.7"/>
       </g>
       <!-- Skull -->
-      <circle cx="629" cy="78" r="6" fill="#F5EFE0"/>
-      <circle cx="626" cy="76" r="1.5" fill="#2A2018"/>
-      <circle cx="632" cy="76" r="1.5" fill="#2A2018"/>
-      <path d="M 629,80 L 627,83 L 631,83 Z" fill="#2A2018"/>
-      <rect x="623" y="82" width="12" height="2.5" fill="#F5EFE0"/>
+      <circle cx="629" cy="98" r="6" fill="#F5EFE0"/>
+      <circle cx="626" cy="96" r="1.5" fill="#2A2018"/>
+      <circle cx="632" cy="96" r="1.5" fill="#2A2018"/>
+      <path d="M 629,100 L 627,103 L 631,103 Z" fill="#2A2018"/>
+      <rect x="623" y="102" width="12" height="2.5" fill="#F5EFE0"/>
       <g stroke="#2A2018" stroke-width="0.8">
-        <line x1="626" y1="82" x2="626" y2="84.5"/>
-        <line x1="629" y1="82" x2="629" y2="84.5"/>
-        <line x1="632" y1="82" x2="632" y2="84.5"/>
+        <line x1="626" y1="102" x2="626" y2="104.5"/>
+        <line x1="629" y1="102" x2="629" y2="104.5"/>
+        <line x1="632" y1="102" x2="632" y2="104.5"/>
       </g>
     </g>
 
@@ -229,11 +229,11 @@
         <line x1="552" y1="270" x2="559" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard -->
         <path d="M 559,279 Q 563,283 554,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Blade — straight, collinear with the hilt (one unbroken line from grip to tip) -->
-        <path d="M 556,272 L 612,228 L 614,232 L 558,276 Z"
+        <!-- Cutlass blade — curved spine + curved edge, meeting at a notched tip -->
+        <path d="M 556,272 Q 580,245 611,229 L 614,232 L 613,236 Q 585,253 558,276 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
-        <!-- Blade fuller -->
-        <path d="M 560,271 L 612,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <!-- Blade fuller (follows the curve) -->
+        <path d="M 561,268 Q 583,247 609,233" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -286,11 +286,11 @@
         <line x1="648" y1="270" x2="641" y2="279" stroke="#2A2018" stroke-width="2.8" stroke-linecap="round"/>
         <!-- D-knuckle guard (mirrored) -->
         <path d="M 641,279 Q 637,283 646,281" stroke="#2A2018" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-        <!-- Blade — straight, collinear with the hilt (mirrored) -->
-        <path d="M 644,272 L 588,228 L 586,232 L 642,276 Z"
+        <!-- Cutlass blade (mirrored) — curved spine + curved edge, notched tip -->
+        <path d="M 644,272 Q 620,245 589,229 L 586,232 L 587,236 Q 615,253 642,276 Z"
               fill="#F5EFE0" stroke="#2A2018" stroke-width="1.7" stroke-linejoin="round"/>
-        <!-- Blade fuller -->
-        <path d="M 640,271 L 588,231" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <!-- Blade fuller (follows the curve) -->
+        <path d="M 639,268 Q 617,247 591,233" stroke="#2A2018" stroke-width="0.6" fill="none" opacity="0.55"/>
       </g>
     </g>
 
@@ -365,8 +365,8 @@
     </g>
   </g>
 
-  <!-- Shark swimming right-to-left, mirrored so head leads. Shifted down so it swims IN the water -->
-  <g transform="translate(1200, 18) scale(-1, 1)">
+  <!-- Shark swimming right-to-left, mirrored so head leads. Shifted further down so it swims deep in the water -->
+  <g transform="translate(1200, 32) scale(-1, 1)">
     <g>
       <!-- Horizontal drift (right-to-left in screen space due to outer mirror) -->
       <animateTransform attributeName="transform" type="translate"
