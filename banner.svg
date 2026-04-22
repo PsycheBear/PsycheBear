@@ -162,34 +162,45 @@
     <line x1="525" y1="142" x2="600" y2="138" stroke="#2A2018" stroke-width="1"/>
     <line x1="675" y1="142" x2="600" y2="138" stroke="#2A2018" stroke-width="1"/>
 
-    <!-- Ropes from mast -->
-    <line x1="600" y1="118" x2="460" y2="330" stroke="#2A2018" stroke-width="1.5"/>
-    <line x1="600" y1="118" x2="740" y2="330" stroke="#2A2018" stroke-width="1.5"/>
+    <!-- Ropes from mast to deck corners -->
+    <line x1="600" y1="118" x2="470" y2="330" stroke="#2A2018" stroke-width="1.5"/>
+    <line x1="600" y1="118" x2="735" y2="330" stroke="#2A2018" stroke-width="1.5"/>
 
-    <!-- Deck line -->
-    <line x1="435" y1="340" x2="765" y2="340" stroke="#2A2018" stroke-width="2.5"/>
+    <!-- Bowsprit — pole extending forward from the forecastle -->
+    <line x1="445" y1="326" x2="378" y2="304" stroke="#2A2018" stroke-width="3" stroke-linecap="round"/>
 
-    <!-- (Railing removed — the horizontal top bar at y=325 was cutting through
-         the figures' legs at knee level, making them look like they were
-         standing on a railing instead of the deck.) -->
+    <!-- Jib sail — triangular headsail on the bowsprit -->
+    <path d="M 445,326 L 383,306 L 588,140 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Jib stay (forestay line) -->
+    <line x1="383" y1="306" x2="588" y2="140" stroke="#2A2018" stroke-width="0.8" stroke-dasharray="3 2"/>
 
-    <!-- Hull -->
-    <path d="M 430,340 L 770,340 L 738,388 L 462,388 Z"
+    <!-- Deck line (main deck, between the fore- and stern-castles) -->
+    <line x1="460" y1="340" x2="750" y2="340" stroke="#2A2018" stroke-width="2.5"/>
+
+    <!-- Hull — galleon profile with raised fore- and stern-castles + curved bottom -->
+    <path d="M 420,340 L 445,340 L 445,326 L 465,326 L 465,340 L 750,340 L 750,322 L 795,322 L 795,340 L 808,340 Q 788,400 600,405 Q 432,400 420,340 Z"
           fill="#F5EFE0" stroke="#2A2018" stroke-width="3" stroke-linejoin="round"/>
 
-    <!-- Hull planks (horizontal) -->
-    <line x1="450" y1="352" x2="750" y2="352" stroke="#2A2018" stroke-width="1"/>
-    <line x1="455" y1="364" x2="745" y2="364" stroke="#2A2018" stroke-width="1"/>
-    <line x1="460" y1="376" x2="740" y2="376" stroke="#2A2018" stroke-width="1"/>
+    <!-- Hull planks — curve with the hull bottom -->
+    <path d="M 435,355 Q 600,362 790,355" fill="none" stroke="#2A2018" stroke-width="1"/>
+    <path d="M 438,372 Q 600,382 785,372" fill="none" stroke="#2A2018" stroke-width="1"/>
+    <path d="M 455,388 Q 600,398 770,388" fill="none" stroke="#2A2018" stroke-width="1"/>
 
-    <!-- Portholes -->
+    <!-- Portholes along the hull -->
     <g fill="none" stroke="#2A2018" stroke-width="2">
-      <circle cx="490" cy="362" r="6"/>
-      <circle cx="545" cy="362" r="6"/>
-      <circle cx="600" cy="362" r="6"/>
+      <circle cx="480" cy="362" r="6"/>
+      <circle cx="535" cy="362" r="6"/>
+      <circle cx="595" cy="362" r="6"/>
       <circle cx="655" cy="362" r="6"/>
-      <circle cx="710" cy="362" r="6"/>
+      <circle cx="715" cy="362" r="6"/>
+      <circle cx="770" cy="362" r="5"/>
     </g>
+
+    <!-- Mizzenmast + spanker sail at the stern -->
+    <line x1="775" y1="300" x2="775" y2="322" stroke="#2A2018" stroke-width="2.5"/>
+    <path d="M 775,302 L 775,322 L 803,320 Z"
+          fill="#F0E8D0" stroke="#2A2018" stroke-width="1.8" stroke-linejoin="round"/>
 
     <!-- Barrel/crate on deck (left) -->
     <g stroke="#2A2018" stroke-width="1.8" fill="none">
@@ -342,15 +353,18 @@
                         values="0,0; 0,-4; 0,2; 0,-2; 0,0"
                         dur="4.5s" repeatCount="indefinite"/>
 
-      <!-- Trailing ribbon — shorter, sits slightly lower, waves in the wind -->
-      <path d="M 162,108 Q 110,104 60,108 Q 10,112 -38,108 L -38,130 Q 10,134 60,130 Q 110,126 162,130 Z"
+      <!-- Rope from gondola stern, pulling the ribbon along behind -->
+      <line x1="165" y1="115" x2="110" y2="118" stroke="#2A2018" stroke-width="1.3" stroke-linecap="round"/>
+
+      <!-- Ribbon — trailing at the end of the rope, waves in the wind -->
+      <path d="M 110,108 Q 60,104 10,108 Q -30,112 -70,108 L -70,130 Q -30,134 10,130 Q 60,126 110,130 Z"
             fill="#F0E8D0" stroke="#2A2018" stroke-width="1.5" stroke-linejoin="round">
         <animate attributeName="d" dur="2s" repeatCount="indefinite"
-          values="M 162,108 Q 110,104 60,108 Q 10,112 -38,108 L -38,130 Q 10,134 60,130 Q 110,126 162,130 Z;
-                  M 162,108 Q 110,112 60,108 Q 10,104 -38,108 L -38,130 Q 10,126 60,130 Q 110,134 162,130 Z;
-                  M 162,108 Q 110,104 60,108 Q 10,112 -38,108 L -38,130 Q 10,134 60,130 Q 110,126 162,130 Z"/>
+          values="M 110,108 Q 60,104 10,108 Q -30,112 -70,108 L -70,130 Q -30,134 10,130 Q 60,126 110,130 Z;
+                  M 110,108 Q 60,112 10,108 Q -30,104 -70,108 L -70,130 Q -30,126 10,130 Q 60,134 110,130 Z;
+                  M 110,108 Q 60,104 10,108 Q -30,112 -70,108 L -70,130 Q -30,134 10,130 Q 60,126 110,130 Z"/>
       </path>
-      <text x="62" y="123" font-family="'Courier New', Courier, monospace"
+      <text x="20" y="123" font-family="'Courier New', Courier, monospace"
             font-size="10" font-weight="900"
             fill="#2A2018" stroke="#2A2018" stroke-width="0.4"
             text-anchor="middle">NO TESTS, JUST PUSH &amp; COMMIT</text>
@@ -440,11 +454,6 @@
         <circle r="2" fill="#2A2018"/>
       </g>
 
-      <!-- Small skull-and-crossbones flag on top front -->
-      <line x1="254" y1="55" x2="254" y2="38" stroke="#2A2018" stroke-width="1.5"/>
-      <path d="M 254,38 L 272,41 L 269,48 L 272,55 L 254,52 Z" fill="#2A2018"/>
-      <circle cx="260" cy="46" r="1.2" fill="#F5EFE0"/>
-      <line x1="257" y1="49" x2="263" y2="49" stroke="#F5EFE0" stroke-width="0.6"/>
     </g>
   </g>
 
