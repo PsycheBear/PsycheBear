@@ -31,14 +31,3 @@ I spend way too much time on a whole lot of nothing.
   <a href="https://www.figma.com/"><img src="https://skillicons.dev/icons?i=figma" height="48" alt="Figma" /></a>
   <a href="https://www.adobe.com/products/illustrator.html"><img src="https://skillicons.dev/icons?i=ai" height="48" alt="Illustrator" /></a>
 </p>
-
-### Stats
-
-<p>
-  <a href="https://github.com/PsycheBear">
-    <img src="https://github-readme-stats.vercel.app/api?username=PsycheBear&show_icons=true&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&icon_color=2A2018&hide=stars,prs,issues,contribs&hide_rank=true" alt="PsycheBear's GitHub stats" />
-  </a>
-  <a href="https://github.com/PsycheBear">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PsycheBear&layout=compact&hide_border=true&bg_color=F5EFE0&title_color=2A2018&text_color=2A2018&size_weight=0.5&count_weight=0.5&langs_count=10" alt="PsycheBear's top languages" />
-  </a>
-</p>
